@@ -227,7 +227,7 @@ namespace Ext.Web.Paginas.Pedidos
                 _entProducto.PaqCaja = CantidadPaquetes;
                 _entProducto.PiezaPaq = CantidadPieza;
                 _entProducto.NumCajas = CantidadCajas;
-                
+                _entProducto.Lote = strlote;
                 _listaProductos.Add(_entProducto);
                 _entProducto = new EntProducto();
             }
