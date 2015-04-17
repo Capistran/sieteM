@@ -684,15 +684,6 @@
     <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_DetallePedido" Method="spUpd_DetallePedido">
-    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idproducto" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="cantidad_suelta" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cantidad_caja" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cantidad_paq" Type="System.Int32" DbType="Int" />
-    <Parameter Name="habilitado" Type="System.Boolean" DbType="Bit" />
-    <Return Type="System.Int32" />
-  </Function>
   <Function Name="siete_pruebasbaxter.spIns_AltaCedis" Method="spIns_AltaCedis">
     <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="estado" Type="System.Int32" DbType="Int" />
@@ -955,5 +946,15 @@
       <Column Name="LONGITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
     </ElementType>
+  </Function>
+  <Function Name="siete_pruebasbaxter.spUpd_DetallePedido" Method="spUpd_DetallePedido">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idproducto" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="cantidad_suelta" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cantidad_caja" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cantidad_paq" Type="System.Int32" DbType="Int" />
+    <Parameter Name="habilitado" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
   </Function>
 </Database>

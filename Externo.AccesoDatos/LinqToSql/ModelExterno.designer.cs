@@ -535,13 +535,6 @@ namespace Externo.AccesoDatos.LinqToSql
 			return ((int)(result.ReturnValue));
 		}
 		
-		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="siete_pruebasbaxter.spUpd_DetallePedido")]
-		public int spUpd_DetallePedido([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idPedido, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(19,2)")] System.Nullable<decimal> idproducto, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cantidad_suelta, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cantidad_caja, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cantidad_paq, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> habilitado)
-		{
-			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPedido, idproducto, cantidad_suelta, cantidad_caja, cantidad_paq, habilitado);
-			return ((int)(result.ReturnValue));
-		}
-		
 		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="siete_pruebasbaxter.spIns_AltaCedis")]
 		public int spIns_AltaCedis([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string nombre, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> estado, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> ciudad, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string colonia, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string calle, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string num_ext, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(20)")] string num_int, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(10)")] string cp, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string manzana, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string lote, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string super_man, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(100)")] string cve_cedis)
 		{
@@ -749,6 +742,13 @@ namespace Externo.AccesoDatos.LinqToSql
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idTransp, cve_ruta, mes);
 			return ((ISingleResult<spSel_DetalleRutaResult>)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="siete_pruebasbaxter.spUpd_DetallePedido")]
+		public int spUpd_DetallePedido([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idPedido, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(19,2)")] System.Nullable<decimal> idproducto, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cantidad_suelta, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cantidad_caja, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cantidad_paq, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> habilitado, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string lote)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPedido, idproducto, cantidad_suelta, cantidad_caja, cantidad_paq, habilitado, lote);
+			return ((int)(result.ReturnValue));
 		}
 	}
 	

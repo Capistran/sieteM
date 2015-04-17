@@ -330,7 +330,7 @@ namespace Externo.Procesamiento.Procesos
                     success = true;
                 }*/
 
-                dc.spUpd_DetallePedido(idPedido, entProducto.IdProducto, entProducto.PiezaPaq, entProducto.NumCajas, entProducto.PaqCaja, entProducto.HabPedido);
+                dc.spUpd_DetallePedido(idPedido, entProducto.IdProducto, entProducto.PiezaPaq, entProducto.NumCajas, entProducto.PaqCaja, entProducto.HabPedido,entProducto.Lote);
                 success = true;
             }
             catch (Exception ex)

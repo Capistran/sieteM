@@ -183,7 +183,7 @@
                 </asp:TemplateField>
                 <asp:TemplateField HeaderText="Lote" ControlStyle-Width="80%" HeaderStyle-HorizontalAlign="Center">
                 <ItemTemplate>
-                    <asp:TextBox ID="txtLote" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtLote" Text='<%#Eval("EProducto.Lote") %>' runat="server"></asp:TextBox>
                 </ItemTemplate>
                 </asp:TemplateField>
                   <asp:TemplateField HeaderText="Descripcion">
