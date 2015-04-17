@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="123ff083-eb24-4eee-8ec4-8d25ec8aa577" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://comunicacion.sietemariaslogistica.com/ServicioSieteMarias.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioSieteMarias.wsdl" MetadataType="Wsdl" ID="1bd5378f-4b4e-4609-a1d3-1a18ed942398" SourceId="1" SourceUrl="http://comunicacion.sietemariaslogistica.com/ServicioSieteMarias.svc?wsdl" />
+    <MetadataFile FileName="ServicioSieteMarias3.xsd" MetadataType="Schema" ID="f5e733cc-2180-4e83-abd2-ba4195a78fe2" SourceId="1" SourceUrl="http://comunicacion.sietemariaslogistica.com/ServicioSieteMarias.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServicioSieteMarias31.xsd" MetadataType="Schema" ID="d7411998-8fdd-48a8-ab38-3f5c5346a307" SourceId="1" SourceUrl="http://comunicacion.sietemariaslogistica.com/ServicioSieteMarias.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioSieteMarias32.xsd" MetadataType="Schema" ID="bc26feb6-a809-4ded-9ce0-c2c1a438323e" SourceId="1" SourceUrl="http://comunicacion.sietemariaslogistica.com/ServicioSieteMarias.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioSieteMarias1.disco" MetadataType="Disco" ID="75e77f05-53b8-4f2d-9d93-18fe55104eb0" SourceId="1" SourceUrl="http://comunicacion.sietemariaslogistica.com/ServicioSieteMarias.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

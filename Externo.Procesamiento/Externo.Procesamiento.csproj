@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09213125-9EC2-4616-8383-DD314F1C95C7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Externo.Procesamiento</RootNamespace>
+    <AssemblyName>Externo.Procesamiento</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entidades\EntCamion.cs" />
+    <Compile Include="Entidades\EntCedis.cs" />
+    <Compile Include="Entidades\EntChofer.cs" />
+    <Compile Include="Entidades\EntCiudad.cs" />
+    <Compile Include="Entidades\EntDias.cs" />
+    <Compile Include="Entidades\EntDireccion.cs" />
+    <Compile Include="Entidades\EntEstado.cs" />
+    <Compile Include="Entidades\EntGrupos.cs" />
+    <Compile Include="Entidades\EntMaquina.cs" />
+    <Compile Include="Entidades\EntMes.cs" />
+    <Compile Include="Entidades\EntPacientes.cs" />
+    <Compile Include="Entidades\EntPedido.cs" />
+    <Compile Include="Entidades\EntProducto.cs" />
+    <Compile Include="Entidades\EntRuta.cs" />
+    <Compile Include="Entidades\EntTransportista.cs" />
+    <Compile Include="Entidades\EntTratamiento.cs" />
+    <Compile Include="Entidades\EntUsuarios.cs" />
+    <Compile Include="Procesos\ProcesosCamion.cs" />
+    <Compile Include="Procesos\ProcesosCedis.cs" />
+    <Compile Include="Procesos\ProcesosMaquina.cs" />
+    <Compile Include="Procesos\ProcesosPedido.cs" />
+    <Compile Include="Procesos\ProcesosCatalogos.cs" />
+    <Compile Include="Procesos\ProcesosChofer.cs" />
+    <Compile Include="Procesos\ProcesosPacientes.cs" />
+    <Compile Include="Procesos\ProcesosProductos.cs" />
+    <Compile Include="Procesos\ProcesosRutas.cs" />
+    <Compile Include="Procesos\ProcesosTransporte.cs" />
+    <Compile Include="Procesos\ProcesosUsuarios.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Externo.AccesoDatos\Externo.AccesoDatos.csproj">
+      <Project>{7A35398D-5FA0-4F42-9DE0-CCAE15F86BB5}</Project>
+      <Name>Externo.AccesoDatos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Externo.Utilerias\Externo.Utilerias.csproj">
+      <Project>{B1F394A8-B282-459F-BAB5-DEA3E7D41953}</Project>
+      <Name>Externo.Utilerias</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

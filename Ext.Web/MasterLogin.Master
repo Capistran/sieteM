@@ -1,0 +1,147 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterLogin.master.cs" Inherits="Ext.Web.MasterLogin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+
+
+<style type="text/css">
+        .style1
+        {
+            height: 238px;
+            width: 1196px;
+        }
+        #IMGLOGO
+        {
+            width: 593px;
+            height: 129px;
+            margin-top: 0px;
+        }
+        .style2
+        {
+            height: 24px;
+            width: 5px;
+        }
+        .style3
+        {
+            height: 121px;
+            width: 1196px;
+        }
+        .style4
+        {
+            width: 5px;
+        }
+        .style5
+        {
+            height: 600;
+            width: 423px;
+        }
+        .style7
+        {
+            height: 67px;
+            width: 1196px;
+        }
+        .style8
+        {
+            width: 423px;
+            height: 23px;
+        }
+        </style>
+</head>
+<body style="background-image: url('Imagenes/Fondo%202.jpg'); height: 580px; width: 1265px;" background="Imagenes/Fondo 2.jpg">
+    <form id="form2" runat="server">
+    <%--<div>      
+        <div>
+        <table bgcolor="White" style="height: 587px; width: 1181px" >
+            <tr>
+                <td align="center" bgcolor="White" class="style7"></td>                              
+            </tr>
+            <tr>
+                <td align="center" bgcolor="White" class="style3">
+                    <img  src="Imagenes/SIETE MARIAS LOGO CURVAS.jpg" id="IMGLOGO" align="middle" /></td>                              
+            </tr>
+            <tr>
+                <td bgcolor="White" class="style1">
+                    <table >
+                        <tr>
+                            <td class="style5">&nbsp;</td>
+                            <td>
+                                &nbsp;</td>                        
+                        </tr>
+                        <tr>
+                            <td class="style5">&nbsp;</td>
+                            <td>
+                                &nbsp;</td>                        
+                        </tr>
+                        <tr>
+                            <td class="style5">&nbsp;</td>
+                            <td>
+                                &nbsp;</td>                        
+                        </tr>
+                        <tr>
+                            <td class="style5">&nbsp;</td>
+                            <td>
+                                <table style="width: 279px">
+                                    <tr>
+                                        <td class="style2">
+                                            &nbsp;</td>                                
+                                    </tr>
+                                    <tr>
+                                        <td class="style4">
+                                            
+                                        </td>
+                                    </tr>
+                                </table>                                
+                            </td>                        
+                        </tr>
+                        <tr>
+                            <td class="style8">
+                                </td>
+                        </tr>
+                        <tr>
+                            <td class="style8">
+                                &nbsp;</td>
+                        </tr>
+                    </table>
+                    <p align="center">SIETE MARIAS LOGISTICA  </p>
+                    <br>
+                    <br />
+                    <p align="right">Derechos reservados </p>
+                </td>
+
+                
+            </tr>
+           
+        </table>
+        </div>
+        
+    </div>--%>
+
+    <div align="center">
+        <table cellpadding="6" cellspacing="6">
+            <tr>
+                <td class="celdamenu">
+                    <asp:Image ID="Image1" runat="server" 
+                        ImageUrl="Imagenes/SIETE MARIAS LOGO CURVAS.jpg" />
+                </td>
+            </tr>            
+            <tr>
+                <td class="contentp2" align="center">
+                <asp:ContentPlaceHolder ID="ContentMasterLogin" runat="server">
+                                          <p style="background-color: #FFFFFF; font-weight: 700; text-align: right;">
+                        &nbsp;</p>  
+                                            </asp:ContentPlaceHolder>
+                    
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+    </form>
+</body>
+</html>

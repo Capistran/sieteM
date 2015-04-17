@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5A51F5EF-2DD6-4A6D-99DA-F018A0C71031}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ext.Web</RootNamespace>
+    <AssemblyName>Ext.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=15.1.1.100, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap-theme.css" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap.css" />
+    <Content Include="bootstrap-3.3.4-dist\css\bootstrap.min.css" />
+    <Content Include="bootstrap-3.3.4-dist\js\bootstrap.js" />
+    <Content Include="bootstrap-3.3.4-dist\js\bootstrap.min.js" />
+    <Content Include="bootstrap-3.3.4-dist\js\npm.js" />
+    <Content Include="Controles\ctrlDireccion.ascx" />
+    <Content Include="Controles\CtrlLoginEstatus.ascx" />
+    <Content Include="Controles\CtrlMensajeError.ascx" />
+    <Content Include="css\MasterStyle.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Imagenes\add.ico" />
+    <Content Include="Imagenes\baxter.png" />
+    <Content Include="Imagenes\Baxter231.png" />
+    <Content Include="Imagenes\blue-dot.png" />
+    <Content Include="Imagenes\gray-dot.png" />
+    <Content Include="Imagenes\green-dot.png" />
+    <Content Include="Imagenes\logo-transporte.png" />
+    <Content Include="Imagenes\purple-dot.png" />
+    <Content Include="Imagenes\red-dot.png" />
+    <Content Include="Imagenes\SIETE MARIAS LOGO CURVAS.jpg" />
+    <Content Include="Imagenes\SIETE MARIAS LOGO CURVAS.png" />
+    <Content Include="Imagenes\SIETE MARIAS LOGO CURVAS_web.png" />
+    <Content Include="Imagenes\TRANSPORTE_NASUTI_LOGO %282%29.jpg" />
+    <Content Include="Imagenes\yellow-dot.png" />
+    <Content Include="js\fnComun.js" />
+    <Content Include="js\fnMapa.js" />
+    <Content Include="js\numerico.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="Paginas\AltaContactoPaciente.aspx" />
+    <Content Include="Paginas\Cedis\Cedis.aspx" />
+    <Content Include="Paginas\Cedis\ModificarCedis.aspx" />
+    <Content Include="Paginas\Choferes\Choferes.aspx" />
+    <Content Include="Paginas\Choferes\DetalleOperadores.aspx" />
+    <Content Include="Paginas\Choferes\ModificarOperador.aspx" />
+    <Content Include="Paginas\Grupos.aspx" />
+    <Content Include="Paginas\Maquinas\HomeChoice.aspx" />
+    <Content Include="Paginas\Maquinas\ModificaHomeChoice.aspx" />
+    <Content Include="Paginas\ModificaContactoPaciente.aspx" />
+    <Content Include="Paginas\ModificarPacientes.aspx" />
+    <Content Include="Paginas\Pacientes.aspx" />
+    <Content Include="Paginas\Pedidos\AsignaPedidoRuta.aspx" />
+    <Content Include="Paginas\Pedidos\DetallePedido.aspx" />
+    <Content Include="Paginas\Pedidos\ModificarPedido.aspx" />
+    <Content Include="Paginas\Pedidos\Pedidos.aspx" />
+    <Content Include="Paginas\Productos\DetalleProducto.aspx" />
+    <Content Include="Paginas\Productos\ModificarProductos.aspx" />
+    <Content Include="Paginas\Productos\Producto.aspx" />
+    <Content Include="Paginas\Rutas\DetalleRuta.aspx" />
+    <Content Include="Paginas\Rutas\RutaTransporte.aspx" />
+    <Content Include="Paginas\Transporte\ModificarTransportista.aspx" />
+    <Content Include="Paginas\Transporte\Transporte.aspx" />
+    <Content Include="Paginas\Unidad\ModificarUnidad.aspx" />
+    <Content Include="Paginas\Unidad\Unidad.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controles\ctrlDireccion.ascx.cs">
+      <DependentUpon>ctrlDireccion.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\ctrlDireccion.ascx.designer.cs">
+      <DependentUpon>ctrlDireccion.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtrlLoginEstatus.ascx.cs">
+      <DependentUpon>CtrlLoginEstatus.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtrlLoginEstatus.ascx.designer.cs">
+      <DependentUpon>CtrlLoginEstatus.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controles\CtrlMensajeError.ascx.cs">
+      <DependentUpon>CtrlMensajeError.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controles\CtrlMensajeError.ascx.designer.cs">
+      <DependentUpon>CtrlMensajeError.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterExterno.Master.cs">
+      <DependentUpon>MasterExterno.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterExterno.Master.designer.cs">
+      <DependentUpon>MasterExterno.Master</DependentUpon>
+    </Compile>
+    <Compile Include="MasterLogin.Master.cs">
+      <DependentUpon>MasterLogin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterLogin.Master.designer.cs">
+      <DependentUpon>MasterLogin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\AltaContactoPaciente.aspx.cs">
+      <DependentUpon>AltaContactoPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\AltaContactoPaciente.aspx.designer.cs">
+      <DependentUpon>AltaContactoPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cedis\Cedis.aspx.cs">
+      <DependentUpon>Cedis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cedis\Cedis.aspx.designer.cs">
+      <DependentUpon>Cedis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Cedis\ModificarCedis.aspx.cs">
+      <DependentUpon>ModificarCedis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Cedis\ModificarCedis.aspx.designer.cs">
+      <DependentUpon>ModificarCedis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Choferes\Choferes.aspx.cs">
+      <DependentUpon>Choferes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Choferes\Choferes.aspx.designer.cs">
+      <DependentUpon>Choferes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Choferes\DetalleOperadores.aspx.cs">
+      <DependentUpon>DetalleOperadores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Choferes\DetalleOperadores.aspx.designer.cs">
+      <DependentUpon>DetalleOperadores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Choferes\ModificarOperador.aspx.cs">
+      <DependentUpon>ModificarOperador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Choferes\ModificarOperador.aspx.designer.cs">
+      <DependentUpon>ModificarOperador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Grupos.aspx.cs">
+      <DependentUpon>Grupos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Grupos.aspx.designer.cs">
+      <DependentUpon>Grupos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Maquinas\HomeChoice.aspx.cs">
+      <DependentUpon>HomeChoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Maquinas\HomeChoice.aspx.designer.cs">
+      <DependentUpon>HomeChoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Maquinas\ModificaHomeChoice.aspx.cs">
+      <DependentUpon>ModificaHomeChoice.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Maquinas\ModificaHomeChoice.aspx.designer.cs">
+      <DependentUpon>ModificaHomeChoice.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\ModificaContactoPaciente.aspx.cs">
+      <DependentUpon>ModificaContactoPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\ModificaContactoPaciente.aspx.designer.cs">
+      <DependentUpon>ModificaContactoPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\ModificarPacientes.aspx.cs">
+      <DependentUpon>ModificarPacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\ModificarPacientes.aspx.designer.cs">
+      <DependentUpon>ModificarPacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Pacientes.aspx.cs">
+      <DependentUpon>Pacientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Pacientes.aspx.designer.cs">
+      <DependentUpon>Pacientes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Pedidos\AsignaPedidoRuta.aspx.cs">
+      <DependentUpon>AsignaPedidoRuta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Pedidos\AsignaPedidoRuta.aspx.designer.cs">
+      <DependentUpon>AsignaPedidoRuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Pedidos\DetallePedido.aspx.cs">
+      <DependentUpon>DetallePedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Pedidos\DetallePedido.aspx.designer.cs">
+      <DependentUpon>DetallePedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Pedidos\ModificarPedido.aspx.cs">
+      <DependentUpon>ModificarPedido.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Pedidos\ModificarPedido.aspx.designer.cs">
+      <DependentUpon>ModificarPedido.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Pedidos\Pedidos.aspx.cs">
+      <DependentUpon>Pedidos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Pedidos\Pedidos.aspx.designer.cs">
+      <DependentUpon>Pedidos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Productos\DetalleProducto.aspx.cs">
+      <DependentUpon>DetalleProducto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Productos\DetalleProducto.aspx.designer.cs">
+      <DependentUpon>DetalleProducto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Productos\ModificarProductos.aspx.cs">
+      <DependentUpon>ModificarProductos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Productos\ModificarProductos.aspx.designer.cs">
+      <DependentUpon>ModificarProductos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Productos\Producto.aspx.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Productos\Producto.aspx.designer.cs">
+      <DependentUpon>Producto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Rutas\DetalleRuta.aspx.cs">
+      <DependentUpon>DetalleRuta.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Rutas\DetalleRuta.aspx.designer.cs">
+      <DependentUpon>DetalleRuta.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Rutas\RutaTransporte.aspx.cs">
+      <DependentUpon>RutaTransporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Rutas\RutaTransporte.aspx.designer.cs">
+      <DependentUpon>RutaTransporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Transporte\ModificarTransportista.aspx.cs">
+      <DependentUpon>ModificarTransportista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Transporte\ModificarTransportista.aspx.designer.cs">
+      <DependentUpon>ModificarTransportista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Transporte\Transporte.aspx.cs">
+      <DependentUpon>Transporte.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Transporte\Transporte.aspx.designer.cs">
+      <DependentUpon>Transporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Unidad\ModificarUnidad.aspx.cs">
+      <DependentUpon>ModificarUnidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Unidad\ModificarUnidad.aspx.designer.cs">
+      <DependentUpon>ModificarUnidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Unidad\Unidad.aspx.cs">
+      <DependentUpon>Unidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Unidad\Unidad.aspx.designer.cs">
+      <DependentUpon>Unidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\vistaCamion.cs" />
+    <Compile Include="Vistas\vistaCatalogos.cs" />
+    <Compile Include="Vistas\vistaCedis.cs" />
+    <Compile Include="Vistas\vistaChofer.cs" />
+    <Compile Include="Vistas\vistaMaquina.cs" />
+    <Compile Include="Vistas\vistaPaciente.cs" />
+    <Compile Include="Vistas\vistaPedido.cs" />
+    <Compile Include="Vistas\vistaProducto.cs" />
+    <Compile Include="Vistas\vistaRutas.cs" />
+    <Compile Include="Vistas\vistaTransporte.cs" />
+    <Compile Include="Vistas\vistaUsuarios.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterLogin.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MasterExterno.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bootstrap-3.3.4-dist\css\bootstrap-theme.css.map" />
+    <None Include="bootstrap-3.3.4-dist\css\bootstrap.css.map" />
+    <None Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.eot" />
+    <None Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.ttf" />
+    <None Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff" />
+    <None Include="bootstrap-3.3.4-dist\fonts\glyphicons-halflings-regular.woff2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Externo.Procesamiento\Externo.Procesamiento.csproj">
+      <Project>{09213125-9EC2-4616-8383-DD314F1C95C7}</Project>
+      <Name>Externo.Procesamiento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Externo.Proxy\Externo.Proxy.csproj">
+      <Project>{1AB16630-2342-4C7A-AA74-3E3A645A109A}</Project>
+      <Name>Externo.Proxy</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Externo.Utilerias\Externo.Utilerias.csproj">
+      <Project>{B1F394A8-B282-459F-BAB5-DEA3E7D41953}</Project>
+      <Name>Externo.Utilerias</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>4270</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

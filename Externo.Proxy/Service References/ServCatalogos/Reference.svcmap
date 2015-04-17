@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="92fbfe9e-492c-4d7f-ab42-7e366d6a8204" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/Servicios7M/ServicioSieteMarias.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServicioSieteMarias.xsd" MetadataType="Schema" ID="6f1a5d46-4dd0-4fbb-be7a-0655212b92da" SourceId="1" SourceUrl="http://localhost/Servicios7M/ServicioSieteMarias.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServicioSieteMarias1.xsd" MetadataType="Schema" ID="a6bcd834-ab8d-4e0c-b9e7-c6e1788e6381" SourceId="1" SourceUrl="http://localhost/Servicios7M/ServicioSieteMarias.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServicioSieteMarias.disco" MetadataType="Disco" ID="21ffd813-c3a5-4722-bf98-f93f6097fd61" SourceId="1" SourceUrl="http://localhost/Servicios7M/ServicioSieteMarias.svc?disco" />
+    <MetadataFile FileName="ServicioSieteMarias.wsdl" MetadataType="Wsdl" ID="ba8abc45-4867-4e1b-b830-13cb588cb227" SourceId="1" SourceUrl="http://localhost/Servicios7M/ServicioSieteMarias.svc?wsdl" />
+    <MetadataFile FileName="ServicioSieteMarias2.xsd" MetadataType="Schema" ID="9a1a1d6d-3797-4e7a-b232-2f61c1e2703b" SourceId="1" SourceUrl="http://localhost/Servicios7M/ServicioSieteMarias.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
