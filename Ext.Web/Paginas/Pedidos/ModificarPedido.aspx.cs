@@ -62,13 +62,16 @@ namespace Ext.Web.Paginas.Pedidos
                         gvActualiza.Visible = false;
                         gvDetallePedido.Visible = true;
                         ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "oculta", "javascript:OcultaRuta(1);", true);
-                        cargaGridPedidoCambio(ViewState["ddval"].ToString());
+                        if (gvDetallePedido.Rows.Count > 0)
+                        {
+                            cargaGridPedidoCambio(ViewState["ddval"].ToString());
+                        }
                     }
                     else                     
                     {
-                        gvDetallePedido.Visible = false;
-                        ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "oculta", "javascript:OcultaRuta(2);", true);
                         gvActualiza.Visible = true;
+                        gvDetallePedido.Visible = false;
+                        ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "oculta", "javascript:OcultaRuta(2);", true);                        
                         CargaControles();
                         cargaGridPedidoCambio(ViewState["ddval"].ToString());
                     }                    
@@ -232,10 +235,49 @@ namespace Ext.Web.Paginas.Pedidos
                 _entProducto = new EntProducto();
             }
         }
-        
+
+
+        private void InformacionDetalleProductoActualiza()
+        {
+            _entProducto = new EntProducto();
+            _listaProductos = new List<EntProducto>();
+
+            for (int i = 0; i < gvActualiza.Rows.Count; i++)
+            {
+
+                Label lblIdProducto = (Label)gvActualiza.Rows[i].FindControl("lblId");
+                int idProd = Convert.ToInt32(lblIdProducto.Text);
+                TextBox Nocajas = (TextBox)gvActualiza.Rows[i].FindControl("txtCantidadCajas");
+                int CantidadCajas = Convert.ToInt32(Nocajas.Text == "" ? "0" : Nocajas.Text);
+
+                TextBox paquetesCajas = (TextBox)gvActualiza.Rows[i].FindControl("txtCantidadPaquetes");
+                int CantidadPaquetes = Convert.ToInt32(paquetesCajas.Text == "" ? "0" : paquetesCajas.Text);
+
+                TextBox piezaPaquete = (TextBox)gvActualiza.Rows[i].FindControl("txtCantidadPieza");
+                int CantidadPieza = Convert.ToInt32(piezaPaquete.Text == "" ? "0" : piezaPaquete.Text);
+
+
+                TextBox lote = (TextBox)gvActualiza.Rows[i].FindControl("txtLote");
+                string strlote = lote.Text;
+
+                CheckBox chActivo = (CheckBox)gvActualiza.Rows[i].FindControl("chkHabilitado");
+                if (chActivo.Checked)
+                    _entProducto.HabPedido = true;
+                else
+                    _entProducto.HabPedido = false;
+
+                _entProducto.IdProducto = idProd;
+                _entProducto.PaqCaja = CantidadPaquetes;
+                _entProducto.PiezaPaq = CantidadPieza;
+                _entProducto.NumCajas = CantidadCajas;
+                _entProducto.Lote = strlote;
+                _listaProductos.Add(_entProducto);
+                _entProducto = new EntProducto();
+            }
+        }
         private void InformacionDetallePedido()
         {
-            InformacionDetalleProducto();
+            
             _entPedido.IdPedido = Convert.ToInt32( ViewState["IdPedido"].ToString());
             _entPedido.ProductosPedido = _listaProductos;
             _entPedido.EPaciente.IdPaciente = Convert.ToInt32(ViewState["IdPaciente"]);
@@ -266,6 +308,7 @@ namespace Ext.Web.Paginas.Pedidos
                 //Actualizar pedido
                 if (ddTratamiento.SelectedValue.ToString() == ViewState["idTratamiento"].ToString())
                 {
+                    InformacionDetalleProducto();
                     InformacionDetallePedido();
                     if (vPedido.ActualizarPedido(idPedido, idRuta, idPaciente, _entPedido))
                     {
@@ -275,6 +318,8 @@ namespace Ext.Web.Paginas.Pedidos
                 }
                 else
                 {
+                   
+                    InformacionDetalleProductoActualiza();
                     InformacionDetallePedido();
                     if (vPedido.GenerarPedido(_entPedido) == 0)
                     {

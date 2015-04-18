@@ -85,7 +85,7 @@ namespace Ext.Web.Paginas.Rutas
                 gvDetalleRuta.DataBind();
             }
             else
-                ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "buscar", "javascript:MsjRutaExistente('')", true);
+                ScriptManager.RegisterClientScriptBlock(this.Page, this.Page.GetType(), "buscar", "javascript:MsjRutaExistente('No existe Ruta Generada')", true);
         }
     }
 }

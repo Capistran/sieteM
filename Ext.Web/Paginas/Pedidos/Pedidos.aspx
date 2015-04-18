@@ -61,7 +61,7 @@
             $(document).ready(function () {
                 $("#divsuccess").show();
                 $(".msjalert").html('');
-                $(".msjalert").html('CEDIS Agregado Exitosamente');
+                $(".msjalert").html('Pedido Agregado Exitosamente');
             });
         }
 

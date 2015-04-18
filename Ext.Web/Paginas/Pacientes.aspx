@@ -98,13 +98,13 @@
         <div class="col-md-3 separa"><asp:TextBox ID="txtApeMat" runat="server"/></div>
     </div>
     <div class="row separa">
-        <div class="col-md-3 separa"><label>No. Filiación:</label></div>
+        <div class="col-md-3 separa"><label>No. AFiliación:</label></div>
         <div class="col-md-3 separa"><asp:TextBox ID="txtNSS" runat="server"/></div>
         <div class="col-md-3 separa"><label>Institución:</label></div>
         <div class="col-md-3 separa"><asp:DropDownList ID="ddInstitucion" runat="server"><asp:ListItem Selected="True">
                 
                 IMSS</asp:ListItem>
-                    <asp:ListItem>ISSTE</asp:ListItem>
+                    <asp:ListItem>ISSSTE</asp:ListItem>
                 </asp:DropDownList></div>
     </div>
     <div class="row separa">
