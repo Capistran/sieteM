@@ -174,15 +174,6 @@
       <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.HOME_CHOICE" Member="HOME_CHOICE">
-    <Type Name="HOME_CHOICE">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="NO_SERIE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Column Name="MANUAL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="PINZAS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-    </Type>
-  </Table>
   <Table Name="siete_pruebasbaxter.CAT_TRATAMIENTO" Member="CAT_TRATAMIENTO">
     <Type Name="CAT_TRATAMIENTO">
       <Column Name="ID_TRAT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
@@ -420,6 +411,31 @@
       <Column Name="CVE_RUTA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="ESTATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="siete_pruebasbaxter.HOME_CHOICE" Member="HOME_CHOICE">
+    <Type Name="HOME_CHOICE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NO_SERIE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="MANUAL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PINZAS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NO_SERIE_REEMPLAZO" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="siete_pruebasbaxter.HISTORIAL_HOME_CHOICE" Member="HISTORIAL_HOME_CHOICE">
+    <Type Name="HISTORIAL_HOME_CHOICE">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIPO_MOVIMIENTO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NO_SERIE_ANTERIOR" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="NO_SERIE_ACTUAL" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </Type>
   </Table>
   <Function Name="siete_pruebasbaxter.spSel_InformacionUsuario" Method="spSel_InformacionUsuario">
@@ -955,6 +971,17 @@
     <Parameter Name="cantidad_paq" Type="System.Int32" DbType="Int" />
     <Parameter Name="habilitado" Type="System.Boolean" DbType="Bit" />
     <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="siete_pruebasbaxter.spReemplazarMaquina" Method="spReemplazarMaquina">
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="noSerieAnterior" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="noSerieReemplazo" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="siete_pruebasbaxter.spEntregarMaquina" Method="spEntregarMaquina">
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="noSerieActual" Type="System.Decimal" DbType="Decimal(19,0)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>

@@ -27,6 +27,8 @@ namespace Ext.Web.Paginas.Maquinas
                     decimal numpaciente=Convert.ToDecimal(ViewState["cvePaciente"].ToString()==""?"0":ViewState["cvePaciente"].ToString());
                     var datosPac=vPaciente.RegresaPacientePorClave(numpaciente);
                     ViewState["IdPaciente"] = datosPac.IdPaciente;
+                    if(vMaquina.ExisteMaquina(datosPac.IdPaciente))
+                        ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "agregado", "javascript:alert('El Paciente ya tiene una HOME CHOICE Agregada');", true);
                     lblNombre.Text = datosPac.Nombre;
                 }
             }
@@ -35,7 +37,11 @@ namespace Ext.Web.Paginas.Maquinas
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             try
-            { decimal noserie=0.0M;
+            { 
+                if(ViewState["IdPaciente"]==null||ViewState["IdPaciente"].ToString()==string.Empty)
+                    ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "agregado", "javascript:alert('No ha seleccionado Paciente');", true);
+                
+                decimal noserie=0.0M;
                 decimal.TryParse(txtNoSerie.Text,out noserie);
                 if(vMaquina.AgregaNuevoHomeChoice(Convert.ToInt32(ViewState["IdPaciente"].ToString()),noserie)==0)
                 {

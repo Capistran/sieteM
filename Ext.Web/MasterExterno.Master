@@ -24,7 +24,8 @@
      <div class="container-fluid">  
     <div><p></p></div>
     <div class="row">
-        <div class="col-md-4"><asp:Image ImageUrl="~/Imagenes/Baxter231.png"  runat="server"/></div>
+        <%--<div class="col-md-4"><asp:Image ImageUrl="~/Imagenes/Baxter231.png"  runat="server"/></div>--%>
+        <div class="col-md-4"></div>
         <div class="col-md-4"><asp:Image ID="Image1" ImageUrl="~/Imagenes/SIETE MARIAS LOGO CURVAS.png"  runat="server"/></div>       
         <div class="col-md-4"><uc1:CtrlUsuarioB ID="CtrlUsuarioB1" runat="server"/></div>
     </div>  

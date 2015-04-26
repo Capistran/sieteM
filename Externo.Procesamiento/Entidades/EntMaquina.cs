@@ -36,5 +36,39 @@ namespace Externo.Procesamiento.Entidades
             get { return _pinzas; }
             set { _pinzas = value; }
         }
+
+        private DateTime _FechaEntrega = new DateTime();
+
+        public DateTime FechaEntrega
+        {
+            get { return _FechaEntrega; }
+            set { _FechaEntrega = value; }
+        }
+
+        private string _tipoMovimiento = string.Empty;
+        
+        public string TipoMovimiento
+        {
+            get { return _tipoMovimiento; }
+            set { _tipoMovimiento = value; }
+        }
+
+        private decimal _serieAnterior = 0.0M;
+        
+        public decimal SerieAnterior
+        {
+            get { return _serieAnterior; }
+            set { _serieAnterior = value; }
+        }
+
+        private decimal _serieActual = 0.0M;
+
+        public decimal SerieActual
+        {
+            get { return _serieActual; }
+            set { _serieActual = value; }
+        }
+
+
     }
 }

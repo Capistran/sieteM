@@ -72,9 +72,9 @@ namespace Externo.Procesamiento.Procesos
             try
             {
                 var rutas = (from rut in dc.vRutasTransportista
-                             where rut.ID_RUTA == pIdRuta
-                             select rut).SingleOrDefault();
-                if (rutas!=null)
+                             where rut.ID_RUTA == (int)pIdRuta
+                             select rut).SingleOrDefault<vRutasTransportista>();
+                if (rutas != null)
                 {
                     _entRuta.IdRuta = rutas.ID_RUTA;
                     _entRuta.CveRuta = rutas.CVE_RUTA;
@@ -84,12 +84,13 @@ namespace Externo.Procesamiento.Procesos
                     _entRuta.Modelo = rutas.MODELO == null ? "" : rutas.MODELO;
                     //_entRuta.CapacidadCarga = (int)rutas.CAP_CARGA;
                     _entRuta.Mes = rutas.MES;
-                   
+
                 }
             }
-            catch
+          
+            catch 
             {
-               //throw new Exception("No existen rutas para esta linea de Transporte");
+               // throw new Exception("No existen rutas para esta linea de Transporte");
             }
             finally
             {

@@ -42,9 +42,6 @@ namespace Externo.AccesoDatos.LinqToSql
     partial void InsertCAT_CHOFER(CAT_CHOFER instance);
     partial void UpdateCAT_CHOFER(CAT_CHOFER instance);
     partial void DeleteCAT_CHOFER(CAT_CHOFER instance);
-    partial void InsertHOME_CHOICE(HOME_CHOICE instance);
-    partial void UpdateHOME_CHOICE(HOME_CHOICE instance);
-    partial void DeleteHOME_CHOICE(HOME_CHOICE instance);
     partial void InsertCAT_TRATAMIENTO(CAT_TRATAMIENTO instance);
     partial void UpdateCAT_TRATAMIENTO(CAT_TRATAMIENTO instance);
     partial void DeleteCAT_TRATAMIENTO(CAT_TRATAMIENTO instance);
@@ -66,6 +63,9 @@ namespace Externo.AccesoDatos.LinqToSql
     partial void InsertCONTACTO_PACIENTE(CONTACTO_PACIENTE instance);
     partial void UpdateCONTACTO_PACIENTE(CONTACTO_PACIENTE instance);
     partial void DeleteCONTACTO_PACIENTE(CONTACTO_PACIENTE instance);
+    partial void InsertHOME_CHOICE(HOME_CHOICE instance);
+    partial void UpdateHOME_CHOICE(HOME_CHOICE instance);
+    partial void DeleteHOME_CHOICE(HOME_CHOICE instance);
     #endregion
 		
 		public ModelExternoDataContext() : 
@@ -218,14 +218,6 @@ namespace Externo.AccesoDatos.LinqToSql
 			}
 		}
 		
-		public System.Data.Linq.Table<HOME_CHOICE> HOME_CHOICE
-		{
-			get
-			{
-				return this.GetTable<HOME_CHOICE>();
-			}
-		}
-		
 		public System.Data.Linq.Table<CAT_TRATAMIENTO> CAT_TRATAMIENTO
 		{
 			get
@@ -327,6 +319,22 @@ namespace Externo.AccesoDatos.LinqToSql
 			get
 			{
 				return this.GetTable<vRutasTransportista>();
+			}
+		}
+		
+		public System.Data.Linq.Table<HOME_CHOICE> HOME_CHOICE
+		{
+			get
+			{
+				return this.GetTable<HOME_CHOICE>();
+			}
+		}
+		
+		public System.Data.Linq.Table<HISTORIAL_HOME_CHOICE> HISTORIAL_HOME_CHOICE
+		{
+			get
+			{
+				return this.GetTable<HISTORIAL_HOME_CHOICE>();
 			}
 		}
 		
@@ -748,6 +756,20 @@ namespace Externo.AccesoDatos.LinqToSql
 		public int spUpd_DetallePedido([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idPedido, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(19,2)")] System.Nullable<decimal> idproducto, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cantidad_suelta, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cantidad_caja, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> cantidad_paq, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Bit")] System.Nullable<bool> habilitado, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="VarChar(50)")] string lote)
 		{
 			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPedido, idproducto, cantidad_suelta, cantidad_caja, cantidad_paq, habilitado, lote);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="siete_pruebasbaxter.spReemplazarMaquina")]
+		public int spReemplazarMaquina([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idPaciente, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(19,0)")] System.Nullable<decimal> noSerieAnterior, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(19,0)")] System.Nullable<decimal> noSerieReemplazo)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPaciente, noSerieAnterior, noSerieReemplazo);
+			return ((int)(result.ReturnValue));
+		}
+		
+		[global::System.Data.Linq.Mapping.FunctionAttribute(Name="siete_pruebasbaxter.spEntregarMaquina")]
+		public int spEntregarMaquina([global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Int")] System.Nullable<int> idPaciente, [global::System.Data.Linq.Mapping.ParameterAttribute(DbType="Decimal(19,0)")] System.Nullable<decimal> noSerieActual)
+		{
+			IExecuteResult result = this.ExecuteMethodCall(this, ((MethodInfo)(MethodInfo.GetCurrentMethod())), idPaciente, noSerieActual);
 			return ((int)(result.ReturnValue));
 		}
 	}
@@ -3188,164 +3210,6 @@ namespace Externo.AccesoDatos.LinqToSql
 				{
 					this._DESCRIPCION = value;
 				}
-			}
-		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="siete_pruebasbaxter.HOME_CHOICE")]
-	public partial class HOME_CHOICE : INotifyPropertyChanging, INotifyPropertyChanged
-	{
-		
-		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
-		
-		private int _ID;
-		
-		private int _ID_PACIENTE;
-		
-		private System.Nullable<decimal> _NO_SERIE;
-		
-		private System.Nullable<bool> _MANUAL;
-		
-		private System.Nullable<bool> _PINZAS;
-		
-    #region Definiciones de métodos de extensibilidad
-    partial void OnLoaded();
-    partial void OnValidate(System.Data.Linq.ChangeAction action);
-    partial void OnCreated();
-    partial void OnIDChanging(int value);
-    partial void OnIDChanged();
-    partial void OnID_PACIENTEChanging(int value);
-    partial void OnID_PACIENTEChanged();
-    partial void OnNO_SERIEChanging(System.Nullable<decimal> value);
-    partial void OnNO_SERIEChanged();
-    partial void OnMANUALChanging(System.Nullable<bool> value);
-    partial void OnMANUALChanged();
-    partial void OnPINZASChanging(System.Nullable<bool> value);
-    partial void OnPINZASChanged();
-    #endregion
-		
-		public HOME_CHOICE()
-		{
-			OnCreated();
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
-		public int ID
-		{
-			get
-			{
-				return this._ID;
-			}
-			set
-			{
-				if ((this._ID != value))
-				{
-					this.OnIDChanging(value);
-					this.SendPropertyChanging();
-					this._ID = value;
-					this.SendPropertyChanged("ID");
-					this.OnIDChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_PACIENTE", DbType="Int NOT NULL")]
-		public int ID_PACIENTE
-		{
-			get
-			{
-				return this._ID_PACIENTE;
-			}
-			set
-			{
-				if ((this._ID_PACIENTE != value))
-				{
-					this.OnID_PACIENTEChanging(value);
-					this.SendPropertyChanging();
-					this._ID_PACIENTE = value;
-					this.SendPropertyChanged("ID_PACIENTE");
-					this.OnID_PACIENTEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NO_SERIE", DbType="Decimal(19,0)")]
-		public System.Nullable<decimal> NO_SERIE
-		{
-			get
-			{
-				return this._NO_SERIE;
-			}
-			set
-			{
-				if ((this._NO_SERIE != value))
-				{
-					this.OnNO_SERIEChanging(value);
-					this.SendPropertyChanging();
-					this._NO_SERIE = value;
-					this.SendPropertyChanged("NO_SERIE");
-					this.OnNO_SERIEChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MANUAL", DbType="Bit")]
-		public System.Nullable<bool> MANUAL
-		{
-			get
-			{
-				return this._MANUAL;
-			}
-			set
-			{
-				if ((this._MANUAL != value))
-				{
-					this.OnMANUALChanging(value);
-					this.SendPropertyChanging();
-					this._MANUAL = value;
-					this.SendPropertyChanged("MANUAL");
-					this.OnMANUALChanged();
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PINZAS", DbType="Bit")]
-		public System.Nullable<bool> PINZAS
-		{
-			get
-			{
-				return this._PINZAS;
-			}
-			set
-			{
-				if ((this._PINZAS != value))
-				{
-					this.OnPINZASChanging(value);
-					this.SendPropertyChanging();
-					this._PINZAS = value;
-					this.SendPropertyChanged("PINZAS");
-					this.OnPINZASChanged();
-				}
-			}
-		}
-		
-		public event PropertyChangingEventHandler PropertyChanging;
-		
-		public event PropertyChangedEventHandler PropertyChanged;
-		
-		protected virtual void SendPropertyChanging()
-		{
-			if ((this.PropertyChanging != null))
-			{
-				this.PropertyChanging(this, emptyChangingEventArgs);
-			}
-		}
-		
-		protected virtual void SendPropertyChanged(String propertyName)
-		{
-			if ((this.PropertyChanged != null))
-			{
-				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}
@@ -7612,6 +7476,413 @@ namespace Externo.AccesoDatos.LinqToSql
 				if ((this._ESTATUS != value))
 				{
 					this._ESTATUS = value;
+				}
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="siete_pruebasbaxter.HOME_CHOICE")]
+	public partial class HOME_CHOICE : INotifyPropertyChanging, INotifyPropertyChanged
+	{
+		
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _ID;
+		
+		private int _ID_PACIENTE;
+		
+		private System.Nullable<decimal> _NO_SERIE;
+		
+		private System.Nullable<bool> _MANUAL;
+		
+		private System.Nullable<bool> _PINZAS;
+		
+		private System.Nullable<System.DateTime> _FECHA_ENTREGA;
+		
+		private string _ESTATUS;
+		
+		private string _MOT_CANCELACION;
+		
+		private System.Nullable<decimal> _NO_SERIE_REEMPLAZO;
+		
+    #region Definiciones de métodos de extensibilidad
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnIDChanging(int value);
+    partial void OnIDChanged();
+    partial void OnID_PACIENTEChanging(int value);
+    partial void OnID_PACIENTEChanged();
+    partial void OnNO_SERIEChanging(System.Nullable<decimal> value);
+    partial void OnNO_SERIEChanged();
+    partial void OnMANUALChanging(System.Nullable<bool> value);
+    partial void OnMANUALChanged();
+    partial void OnPINZASChanging(System.Nullable<bool> value);
+    partial void OnPINZASChanged();
+    partial void OnFECHA_ENTREGAChanging(System.Nullable<System.DateTime> value);
+    partial void OnFECHA_ENTREGAChanged();
+    partial void OnESTATUSChanging(string value);
+    partial void OnESTATUSChanged();
+    partial void OnMOT_CANCELACIONChanging(string value);
+    partial void OnMOT_CANCELACIONChanged();
+    partial void OnNO_SERIE_REEMPLAZOChanging(System.Nullable<decimal> value);
+    partial void OnNO_SERIE_REEMPLAZOChanged();
+    #endregion
+		
+		public HOME_CHOICE()
+		{
+			OnCreated();
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this.OnIDChanging(value);
+					this.SendPropertyChanging();
+					this._ID = value;
+					this.SendPropertyChanged("ID");
+					this.OnIDChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_PACIENTE", DbType="Int NOT NULL")]
+		public int ID_PACIENTE
+		{
+			get
+			{
+				return this._ID_PACIENTE;
+			}
+			set
+			{
+				if ((this._ID_PACIENTE != value))
+				{
+					this.OnID_PACIENTEChanging(value);
+					this.SendPropertyChanging();
+					this._ID_PACIENTE = value;
+					this.SendPropertyChanged("ID_PACIENTE");
+					this.OnID_PACIENTEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NO_SERIE", DbType="Decimal(19,0)")]
+		public System.Nullable<decimal> NO_SERIE
+		{
+			get
+			{
+				return this._NO_SERIE;
+			}
+			set
+			{
+				if ((this._NO_SERIE != value))
+				{
+					this.OnNO_SERIEChanging(value);
+					this.SendPropertyChanging();
+					this._NO_SERIE = value;
+					this.SendPropertyChanged("NO_SERIE");
+					this.OnNO_SERIEChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MANUAL", DbType="Bit")]
+		public System.Nullable<bool> MANUAL
+		{
+			get
+			{
+				return this._MANUAL;
+			}
+			set
+			{
+				if ((this._MANUAL != value))
+				{
+					this.OnMANUALChanging(value);
+					this.SendPropertyChanging();
+					this._MANUAL = value;
+					this.SendPropertyChanged("MANUAL");
+					this.OnMANUALChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_PINZAS", DbType="Bit")]
+		public System.Nullable<bool> PINZAS
+		{
+			get
+			{
+				return this._PINZAS;
+			}
+			set
+			{
+				if ((this._PINZAS != value))
+				{
+					this.OnPINZASChanging(value);
+					this.SendPropertyChanging();
+					this._PINZAS = value;
+					this.SendPropertyChanged("PINZAS");
+					this.OnPINZASChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FECHA_ENTREGA", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FECHA_ENTREGA
+		{
+			get
+			{
+				return this._FECHA_ENTREGA;
+			}
+			set
+			{
+				if ((this._FECHA_ENTREGA != value))
+				{
+					this.OnFECHA_ENTREGAChanging(value);
+					this.SendPropertyChanging();
+					this._FECHA_ENTREGA = value;
+					this.SendPropertyChanged("FECHA_ENTREGA");
+					this.OnFECHA_ENTREGAChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ESTATUS", DbType="VarChar(15)")]
+		public string ESTATUS
+		{
+			get
+			{
+				return this._ESTATUS;
+			}
+			set
+			{
+				if ((this._ESTATUS != value))
+				{
+					this.OnESTATUSChanging(value);
+					this.SendPropertyChanging();
+					this._ESTATUS = value;
+					this.SendPropertyChanged("ESTATUS");
+					this.OnESTATUSChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MOT_CANCELACION", DbType="VarChar(50)")]
+		public string MOT_CANCELACION
+		{
+			get
+			{
+				return this._MOT_CANCELACION;
+			}
+			set
+			{
+				if ((this._MOT_CANCELACION != value))
+				{
+					this.OnMOT_CANCELACIONChanging(value);
+					this.SendPropertyChanging();
+					this._MOT_CANCELACION = value;
+					this.SendPropertyChanged("MOT_CANCELACION");
+					this.OnMOT_CANCELACIONChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NO_SERIE_REEMPLAZO", DbType="Decimal(19,0)")]
+		public System.Nullable<decimal> NO_SERIE_REEMPLAZO
+		{
+			get
+			{
+				return this._NO_SERIE_REEMPLAZO;
+			}
+			set
+			{
+				if ((this._NO_SERIE_REEMPLAZO != value))
+				{
+					this.OnNO_SERIE_REEMPLAZOChanging(value);
+					this.SendPropertyChanging();
+					this._NO_SERIE_REEMPLAZO = value;
+					this.SendPropertyChanged("NO_SERIE_REEMPLAZO");
+					this.OnNO_SERIE_REEMPLAZOChanged();
+				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+			}
+		}
+	}
+	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="siete_pruebasbaxter.HISTORIAL_HOME_CHOICE")]
+	public partial class HISTORIAL_HOME_CHOICE
+	{
+		
+		private System.Nullable<int> _ID;
+		
+		private System.Nullable<int> _ID_PACIENTE;
+		
+		private string _TIPO_MOVIMIENTO;
+		
+		private System.Nullable<decimal> _NO_SERIE_ANTERIOR;
+		
+		private System.Nullable<decimal> _NO_SERIE_ACTUAL;
+		
+		private System.Nullable<System.DateTime> _FECHA_ENTREGA;
+		
+		private string _ESTATUS;
+		
+		private string _MOT_CANCELACION;
+		
+		public HISTORIAL_HOME_CHOICE()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID", DbType="Int")]
+		public System.Nullable<int> ID
+		{
+			get
+			{
+				return this._ID;
+			}
+			set
+			{
+				if ((this._ID != value))
+				{
+					this._ID = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_PACIENTE", DbType="Int")]
+		public System.Nullable<int> ID_PACIENTE
+		{
+			get
+			{
+				return this._ID_PACIENTE;
+			}
+			set
+			{
+				if ((this._ID_PACIENTE != value))
+				{
+					this._ID_PACIENTE = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_TIPO_MOVIMIENTO", DbType="VarChar(10)")]
+		public string TIPO_MOVIMIENTO
+		{
+			get
+			{
+				return this._TIPO_MOVIMIENTO;
+			}
+			set
+			{
+				if ((this._TIPO_MOVIMIENTO != value))
+				{
+					this._TIPO_MOVIMIENTO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NO_SERIE_ANTERIOR", DbType="Decimal(19,0)")]
+		public System.Nullable<decimal> NO_SERIE_ANTERIOR
+		{
+			get
+			{
+				return this._NO_SERIE_ANTERIOR;
+			}
+			set
+			{
+				if ((this._NO_SERIE_ANTERIOR != value))
+				{
+					this._NO_SERIE_ANTERIOR = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NO_SERIE_ACTUAL", DbType="Decimal(19,0)")]
+		public System.Nullable<decimal> NO_SERIE_ACTUAL
+		{
+			get
+			{
+				return this._NO_SERIE_ACTUAL;
+			}
+			set
+			{
+				if ((this._NO_SERIE_ACTUAL != value))
+				{
+					this._NO_SERIE_ACTUAL = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_FECHA_ENTREGA", DbType="DateTime")]
+		public System.Nullable<System.DateTime> FECHA_ENTREGA
+		{
+			get
+			{
+				return this._FECHA_ENTREGA;
+			}
+			set
+			{
+				if ((this._FECHA_ENTREGA != value))
+				{
+					this._FECHA_ENTREGA = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ESTATUS", DbType="VarChar(15)")]
+		public string ESTATUS
+		{
+			get
+			{
+				return this._ESTATUS;
+			}
+			set
+			{
+				if ((this._ESTATUS != value))
+				{
+					this._ESTATUS = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_MOT_CANCELACION", DbType="VarChar(50)")]
+		public string MOT_CANCELACION
+		{
+			get
+			{
+				return this._MOT_CANCELACION;
+			}
+			set
+			{
+				if ((this._MOT_CANCELACION != value))
+				{
+					this._MOT_CANCELACION = value;
 				}
 			}
 		}

@@ -12,6 +12,7 @@ namespace Externo.Procesamiento.Procesos
     {
         ModelExternoDataContext dc;
         EntCamion _entCamion = null;
+        List<EntCamion> _listaCamion = null;
         public ProcesosCamion()
         { }
 
@@ -20,7 +21,6 @@ namespace Externo.Procesamiento.Procesos
         {
             return null;
         }
-
 
         public int ActualizarUnidad(EntCamion entCamion)
         {
@@ -83,6 +83,45 @@ namespace Externo.Procesamiento.Procesos
                 dc.Dispose();
             }
             return _entCamion;
+        }
+
+        public List<EntCamion> RegresaUnidades(int idTransp)
+        {
+            dc = new ModelExternoDataContext(Configuracion.strConexion);
+            _listaCamion = new List<EntCamion>();
+            try
+            {
+                var Unidades = (from unid in dc.CAT_CAMION
+                                where unid.ID_TRANSP == idTransp
+                                select unid).ToList();
+                if (Unidades.Count > 0)
+                {
+                    foreach (var u in Unidades)
+                    {
+                        _entCamion = new EntCamion();
+                        _entCamion.IdCamion = u.ID_CAMION;
+                        _entCamion.Placas = u.PLACAS;
+                        _entCamion.Marca = u.MARCA;
+                        _entCamion.Modelo = u.MODELO;
+                        _entCamion.NumEconomico = u.NUM_ECONOMICO;
+                        _entCamion.CapacidadCarga = (decimal)u.CAP_CARGA;
+                        _entCamion.NoPoliza = u.NO_POLIZA;
+                        _entCamion.VigenciaPoliza = (DateTime)u.VIGENCIA_POLIZA;
+                        _listaCamion.Add(_entCamion);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                dc.Connection.Close();
+                dc.Dispose();
+            }
+
+            return _listaCamion;
         }
 
     }

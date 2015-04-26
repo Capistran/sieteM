@@ -22,6 +22,9 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPrincipal" runat="server">
 <div class="container">
+<div>
+    <asp:GridView ID="gvHistorial" runat="server" AutoGenerateColumns="false" CssClass="table table-striped table-bordered table-condensed"> </asp:GridView>
+</div>
     <table class="style1">
         <tr>
             <td>
@@ -35,7 +38,7 @@
             <td>
                 &nbsp;</td>
         </tr>
-        <tr>
+        <tr style="display:none">
             <td>
                 </td>
             <td>
@@ -64,7 +67,7 @@
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
-            <td>
+            <td style="display:none">
                 <asp:Button ID="btnGuardar" runat="server" Text="Guardar Cambio" UseSubmitBehavior="false"
                     onclick="btnGuardar_Click" /></td>
             <td>

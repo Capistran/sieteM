@@ -26,6 +26,11 @@ namespace Ext.Web.Vistas
             return prcCamion.ObtieneInformacionUnidad(numeco, idTransp);
         }
 
+        public List<EntCamion> ObteneUnidades(int idTransp)
+        {
+            return prcCamion.RegresaUnidades(idTransp);
+        }
+
         ~vistaCamion()
         {
             prcCamion = null;

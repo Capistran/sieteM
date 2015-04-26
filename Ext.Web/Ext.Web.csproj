@@ -110,6 +110,7 @@
     <Content Include="Paginas\Transporte\Transporte.aspx" />
     <Content Include="Paginas\Unidad\ModificarUnidad.aspx" />
     <Content Include="Paginas\Unidad\Unidad.aspx" />
+    <Content Include="Paginas\Unidad\UnidadesTransportista.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -344,6 +345,13 @@
     </Compile>
     <Compile Include="Paginas\Unidad\Unidad.aspx.designer.cs">
       <DependentUpon>Unidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Unidad\UnidadesTransportista.aspx.cs">
+      <DependentUpon>UnidadesTransportista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Unidad\UnidadesTransportista.aspx.designer.cs">
+      <DependentUpon>UnidadesTransportista.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Vistas\vistaCamion.cs" />

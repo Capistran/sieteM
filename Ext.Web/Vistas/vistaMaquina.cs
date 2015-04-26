@@ -23,5 +23,15 @@ namespace Ext.Web.Vistas
         {
             return prcMaquina.ActualizarSerieHomeChoice(idPaciente, noserie);
         }
+
+        public bool ExisteMaquina(int idPaciente)
+        {
+            return prcMaquina.TieneMaquinaRegistrada(idPaciente);
+        }
+
+        public List<EntMaquina> HistorialMaquina(int idPaciente)
+        {
+            return prcMaquina.RegresaHistorialMaquina(idPaciente);
+        }
     }
 }
