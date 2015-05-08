@@ -274,6 +274,40 @@ namespace Externo.Procesamiento.Procesos
             return _listaRuta;
         }
 
+        public List<EntRuta> RegresaCatalogosRutas(int idTransp)
+        {
+            dc = new ModelExternoDataContext(Configuracion.strConexion);
+            _listaRuta = new List<EntRuta>();
+            try
+            {
+                var rutas = (from lista in dc.vCatalogoRutas
+                             where lista.ID_TRANSP == idTransp
+                             select lista).ToList();
+                if (rutas.Count > 0)
+                {
+                    foreach (var r in rutas)
+                    {
+                        _entRuta = new EntRuta();
+                        _entRuta.CveRuta = r.CVE_RUTA;
+                        _entRuta.CedisOrigen = r.CEDIS;
+                        _entRuta.Mes = r.MES;
+                        _listaRuta.Add(_entRuta);
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                dc.Connection.Close();
+                dc.Dispose();
+            }
+            return _listaRuta;
+        }
+
         
     }
 }

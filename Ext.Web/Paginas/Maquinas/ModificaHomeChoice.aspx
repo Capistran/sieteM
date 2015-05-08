@@ -4,7 +4,8 @@
 
 <script type="text/javascript" language="javascript">
     $(document).ready(function () {
-
+        $(".mostrarserie").hide();
+        $(".gridHistorial").hide();
         $("#<%= txtNumPaciente.ClientID %>").keyup(function (e) {
             if (e.keyCode == 13) {
                 __doPostBack(this.name, $("#<%= txtNumPaciente.ClientID %>").val());
@@ -12,6 +13,19 @@
         });
     });
 
+    
+    function MostrarSerie(mostrar) {
+        $(document).ready(function () {
+            if (mostrar == 1) {
+                $(".mostrarserie").show();
+                $(".gridHistorial").show();
+            }
+            else {
+                $(".mostrarserie").hide();
+                $(".gridHistorial").hide();
+            }
+        });
+    }
 
     function __doPostBack(eventTarget, eventArgument) {
         document.forms.form1.ctl00$ContentPrincipal$__EVENTTARGET.value = eventTarget;
@@ -23,7 +37,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPrincipal" runat="server">
 <div class="container">
 <div>
-    <asp:GridView ID="gvHistorial" runat="server" AutoGenerateColumns="false" CssClass="table table-striped table-bordered table-condensed"> </asp:GridView>
+    <asp:GridView ID="gvHistorial" runat="server" AutoGenerateColumns="false" CssClass="table table-striped table-bordered table-condensed gridHistorial"> </asp:GridView>
 </div>
     <table class="style1">
         <tr>
@@ -38,7 +52,19 @@
             <td>
                 &nbsp;</td>
         </tr>
-        <tr style="display:none">
+        <tr class="mostrarserie">
+            <td>
+                </td>
+            <td>
+                <label>Número Serie Actual:</label></td>
+            <td>
+              <asp:Label ID="lblSerie" runat="server"></asp:Label></td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr class="mostrarserie" >
             <td>
                 </td>
             <td>
@@ -50,6 +76,7 @@
             <td>
                 &nbsp;</td>
         </tr>
+        
         <tr>
             <td>
                 &nbsp;</td>
@@ -67,7 +94,7 @@
                 &nbsp;</td>
             <td>
                 &nbsp;</td>
-            <td style="display:none">
+            <td >
                 <asp:Button ID="btnGuardar" runat="server" Text="Guardar Cambio" UseSubmitBehavior="false"
                     onclick="btnGuardar_Click" /></td>
             <td>

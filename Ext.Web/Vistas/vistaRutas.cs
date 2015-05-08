@@ -43,6 +43,10 @@ namespace Ext.Web.Vistas
         {
             return prcRutas.RegresaDetalleRutaCve(IdTransp, cve_ruta, mes);
         }
-        
+
+        public List<EntRuta> RegresaCatalogoRutas(int idTransp)
+        {
+            return prcRutas.RegresaCatalogosRutas(idTransp);
+        }
     }
 }

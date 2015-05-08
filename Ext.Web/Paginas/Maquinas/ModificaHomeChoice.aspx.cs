@@ -29,12 +29,15 @@ namespace Ext.Web.Paginas.Maquinas
                     if (datosPac.IdPaciente <= 0)
                     {
                         ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "agregado", "javascript:alert('No existe la Informacion de paciente');", true);
+                        ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "mostrarserie", "javascript:MostrarSerie(0);", true);
                         return;
                     }
+                    //MostrarSerie
+                    ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "mostrarserie", "javascript:MostrarSerie(1);", true);
                     ViewState["IdPaciente"] = datosPac.IdPaciente;
                     lblNombre.Text = datosPac.Nombre;
                     var datosHC = vMaquina.RegresaInformacionHC(datosPac.IdPaciente);
-                    txtNoSerie.Text = datosHC.NoSerie.ToString();                    
+                    lblSerie.Text = datosHC.SerieActual.ToString();                    
                     LlenaGridHistorial(datosPac.IdPaciente);
                 }
             }
@@ -54,6 +57,8 @@ namespace Ext.Web.Paginas.Maquinas
                 if (vMaquina.ActualizaHC(Convert.ToInt32(ViewState["IdPaciente"]), noserie))
                 {
                     ScriptManager.RegisterClientScriptBlock(Page, Page.GetType(), "agregado", "javascript:alert('Se ha actualizado el número de serie');", true);
+                    txtNoSerie.Text = "";
+                    txtNumPaciente.Text = "";
                     LlenaGridHistorial(Convert.ToInt32(ViewState["IdPaciente"]));
                 }
             }

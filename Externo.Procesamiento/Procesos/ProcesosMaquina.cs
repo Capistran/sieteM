@@ -49,6 +49,7 @@ namespace Externo.Procesamiento.Procesos
                 {
                     entMaquina.IdMaquina = maqHC.ID;
                     entMaquina.NoSerie = (decimal)maqHC.NO_SERIE;
+                    entMaquina.SerieActual = (decimal)maqHC.NO_SERIE_REEMPLAZO;
                 }
             }
             catch (Exception ex)
@@ -84,11 +85,11 @@ namespace Externo.Procesamiento.Procesos
 
                 //success=true;
                 var HC = (from hc in dc.HOME_CHOICE
-                          where hc.NO_SERIE == noserie
+                          where hc.ID_PACIENTE == idPaciente
                           select hc).SingleOrDefault();
                 if (HC != null)
                 {
-                    HC.NO_SERIE = noserie;
+                    HC.NO_SERIE_REEMPLAZO = noserie;
                     dc.SubmitChanges();
                     success = true;
                 }

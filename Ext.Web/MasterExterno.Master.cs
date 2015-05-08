@@ -42,6 +42,8 @@ namespace Ext.Web
                     Nivel1.ChildItems.Add(Nivel2);
                     Nivel2 = CreaOpcionMenu("Detalle Ruta", "~/Paginas/Rutas/DetalleRuta.aspx", "Configurar Ruta");
                     Nivel1.ChildItems.Add(Nivel2);
+                    Nivel2 = CreaOpcionMenu("Rutas", "~/Paginas/Rutas/ConsultaRutas.aspx", "Consulta Ruta");
+                    Nivel1.ChildItems.Add(Nivel2);
                     Nivel2 = CreaOpcionMenu("CEDIS", "", "");
                     Nivel3 = CreaOpcionMenu("Nuevo", "~/Paginas/Cedis/Cedis.aspx", "");
                     Nivel2.ChildItems.Add(Nivel3);
@@ -105,7 +107,7 @@ namespace Ext.Web
                         //Nivel2.ChildItems.Add(Nivel3);
                         //Nivel3 = CreaOpcionMenu("Consultar", "~/Paginas/Pedidos/Pedidos.aspx", "");
                         Nivel2.ChildItems.Add(Nivel3);
-                        Nivel3 = CreaOpcionMenu("Reemplazo", "~/Paginas/Maquinas/ModificaHomeChoice.aspx", "");
+                        Nivel3 = CreaOpcionMenu("Historial de Reemplazo HC", "~/Paginas/Maquinas/ModificaHomeChoice.aspx", "");
                         Nivel2.ChildItems.Add(Nivel3);
                    // Nivel2.ChildItems.Add(Nivel3);
                     Nivel1.ChildItems.Add(Nivel2);

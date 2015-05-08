@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPrincipal" runat="server">
 
-<div>
-<asp:GridView ID="gvUnidades" runat="server" AutoGenerateColumns="false"></asp:GridView>
+<div class="container">
+<asp:GridView ID="gvUnidades" runat="server" AutoGenerateColumns="false" CssClass="table table-striped table-bordered table-condensed"></asp:GridView>
 </div>
 </asp:Content>

@@ -1,290 +1,367 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 19.25, 29.75" name="ModelExterno">
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 26, 26" name="ModelExterno">
   <DataContextMoniker Name="/ModelExternoDataContext" />
   <nestedChildShapes>
-    <classShape Id="a621a19f-d18b-4d45-b7c5-8459153d1f3e" isExpanded="false" absoluteBounds="17, 0.5, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/vListaPacientes" />
-      <nestedChildShapes>
-        <elementListCompartment Id="81eb83a9-92a0-4be3-b6ff-4d8889133791" absoluteBounds="17.015, 0.96, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="ef0cb9a8-9add-4c34-9afc-90b90f474347" isExpanded="false" absoluteBounds="17, 1.125, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/vChoferes" />
-      <nestedChildShapes>
-        <elementListCompartment Id="0af56a18-b318-4e64-9fd0-c543ded2792d" absoluteBounds="17.015, 1.585, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="9464b2b0-61e6-4361-b4e2-8d04dca29de2" isExpanded="false" absoluteBounds="17, 1.875, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/vTransportistaActivo" />
-      <nestedChildShapes>
-        <elementListCompartment Id="80f8f3b5-d4e0-4b21-bb4f-2268c1491a22" absoluteBounds="17.015, 2.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="f4eb88b0-4286-4851-a503-d19b222a9723" isExpanded="false" absoluteBounds="8.75, 2.25, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/CIUDAD" />
-      <nestedChildShapes>
-        <elementListCompartment Id="bff72e8c-8df5-46b7-966d-6659adad8841" absoluteBounds="8.765, 2.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="fc56c358-328b-4b81-9ee1-c2c1effed1a7" isExpanded="false" absoluteBounds="6.25, 6, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/DETALLE_RUTA" />
-      <nestedChildShapes>
-        <elementListCompartment Id="782eda55-619a-488d-9ecd-e0b460e534d4" absoluteBounds="6.265, 6.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="0c2335ed-82bd-4bf7-a432-e69209d2c0e1" absoluteBounds="8.75, 10.25, 2, 1.1939925130208344">
-      <DataClassMoniker Name="/ModelExternoDataContext/DIAS" />
-      <nestedChildShapes>
-        <elementListCompartment Id="e884880c-7bd1-4e0a-b038-de9156816f38" absoluteBounds="8.765, 10.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="4ca43df0-20db-43d5-8f5d-32273d5e7d58" absoluteBounds="6.75, 12.25, 2, 1.1939925130208344">
-      <DataClassMoniker Name="/ModelExternoDataContext/ESTADOS" />
-      <nestedChildShapes>
-        <elementListCompartment Id="48970cc4-d138-4dcf-9c44-7be15bee8ad4" absoluteBounds="6.765, 12.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="2c6e49bf-f18f-4a0d-982e-8958350dae1a" absoluteBounds="9.75, 12.25, 2, 1.3862939453124987">
-      <DataClassMoniker Name="/ModelExternoDataContext/ESTATUS_MODULOS" />
-      <nestedChildShapes>
-        <elementListCompartment Id="62d1075d-fc43-46b2-b212-6f7af21aa43e" absoluteBounds="9.765, 12.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="74f08bfb-2050-495a-9db3-d9065c77a6af" isExpanded="false" absoluteBounds="11.75, 2.25, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/GRUPOS" />
-      <nestedChildShapes>
-        <elementListCompartment Id="42db9087-91d3-451c-98a1-5199baa089ef" absoluteBounds="11.765, 2.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="f30a2f19-ff9e-43f8-a818-455adb09b373" isExpanded="false" absoluteBounds="0.75, 7.75, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/USUARIOS" />
-      <nestedChildShapes>
-        <elementListCompartment Id="a8b07167-aad8-4260-a370-7b76109891e6" absoluteBounds="0.765, 8.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="89b21533-199a-4102-93d1-a8dc12e50653" absoluteBounds="3.25, 6, 2, 1.9631982421875">
-      <DataClassMoniker Name="/ModelExternoDataContext/PEDIDO" />
-      <nestedChildShapes>
-        <elementListCompartment Id="c6b726be-33f2-4148-b7bf-93ca6c2ae2aa" absoluteBounds="3.2649999999999997, 6.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(5.25 : 6.225); (6.25 : 6.225)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/PEDIDO/PEDIDO_DETALLE_RUTA" />
-      <nodes>
-        <classShapeMoniker Id="89b21533-199a-4102-93d1-a8dc12e50653" />
-        <classShapeMoniker Id="fc56c358-328b-4b81-9ee1-c2c1effed1a7" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(1.75 : 7.75); (1.75 : 7.109375125); (2.77604166666667 : 7.109375125 : JumpStart); (2.94270833333333 : 7.109375125 : JumpEnd); (3.25 : 7.109375125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/USUARIOS/USUARIOS_PEDIDO" />
-      <nodes>
-        <classShapeMoniker Id="f30a2f19-ff9e-43f8-a818-455adb09b373" />
-        <classShapeMoniker Id="89b21533-199a-4102-93d1-a8dc12e50653" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="32e78e4c-701a-49f0-bbef-ad2258a768cd" isExpanded="false" absoluteBounds="3.75, 0.875, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/PRODUCTO" />
-      <nestedChildShapes>
-        <elementListCompartment Id="0478a84e-81e4-4abd-9844-efc644818535" absoluteBounds="3.7649999999999997, 1.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="82a2582b-fe75-4155-9cb1-fd7b99009b22" isExpanded="false" absoluteBounds="0.5, 20.5, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/CAT_CHOFER" />
-      <nestedChildShapes>
-        <elementListCompartment Id="2b6cc640-7d12-41aa-b447-bb25e55961ce" absoluteBounds="0.515, 20.96, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="af67a023-d221-493b-b07e-838da6c7a71f" isExpanded="false" absoluteBounds="17, 3.375, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/vPedidoManual" />
-      <nestedChildShapes>
-        <elementListCompartment Id="740a84a3-963c-403c-8c1f-8bc595f1810d" absoluteBounds="17.015, 3.835, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="1b8c41a5-4685-4a0c-86e3-477f24a0015f" isExpanded="false" absoluteBounds="17, 4.125, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/vPedidoMaquina" />
-      <nestedChildShapes>
-        <elementListCompartment Id="1b16622e-541c-4b43-a8f5-7134d3a35df1" absoluteBounds="17.015, 4.585, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="acb87866-d1ab-44a0-9a74-07ece4f98973" isExpanded="false" absoluteBounds="1, 0.875, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/CAT_TRATAMIENTO" />
-      <nestedChildShapes>
-        <elementListCompartment Id="335dba4c-8f9a-4022-b83e-e3f225d8822f" absoluteBounds="1.0150000000000001, 1.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="a43dc94d-a384-4a4d-b0cd-4e0e7b231d7f" isExpanded="false" absoluteBounds="0.875, 4.375, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/PACIENTE" />
-      <nestedChildShapes>
-        <elementListCompartment Id="b27aa53e-be7f-418f-9988-921cdfb5dd59" absoluteBounds="0.89, 4.835, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(2.875 : 4.6); (3.91666666666667 : 4.6 : JumpStart); (4.08333333333333 : 4.6 : JumpEnd); (7.25 : 4.6); (7.25 : 6)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/PACIENTE/PACIENTE_DETALLE_RUTA" />
-      <nodes>
-        <classShapeMoniker Id="a43dc94d-a384-4a4d-b0cd-4e0e7b231d7f" />
-        <classShapeMoniker Id="fc56c358-328b-4b81-9ee1-c2c1effed1a7" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(2.84375 : 4.825); (2.84375 : 6.40624725); (3.25 : 6.40624725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/PACIENTE/PACIENTE_PEDIDO" />
-      <nodes>
-        <classShapeMoniker Id="a43dc94d-a384-4a4d-b0cd-4e0e7b231d7f" />
-        <classShapeMoniker Id="89b21533-199a-4102-93d1-a8dc12e50653" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(1.55919230769231 : 4.375); (1.55919230769231 : 4.125); (2.20584615384615 : 4.125); (2.20584615384615 : 4.375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/PACIENTE/PACIENTE_PACIENTE" />
-      <nodes>
-        <classShapeMoniker Id="a43dc94d-a384-4a4d-b0cd-4e0e7b231d7f" />
-        <classShapeMoniker Id="a43dc94d-a384-4a4d-b0cd-4e0e7b231d7f" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="8fde68c5-1cc3-46c6-8351-a289e7633117" absoluteBounds="3.5, 13.75, 2, 2.3478011067708344">
-      <DataClassMoniker Name="/ModelExternoDataContext/CAT_RUTA" />
-      <nestedChildShapes>
-        <elementListCompartment Id="feb62b4b-21a2-43e4-be85-318b54bb9791" absoluteBounds="3.515, 14.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(4.5 : 13.75); (4.5 : 9.825); (6 : 9.825); (6 : 6.368752); (6.25 : 6.368752)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/CAT_RUTA/CAT_RUTA_DETALLE_RUTA" />
-      <nodes>
-        <classShapeMoniker Id="8fde68c5-1cc3-46c6-8351-a289e7633117" />
-        <classShapeMoniker Id="fc56c358-328b-4b81-9ee1-c2c1effed1a7" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="5d0b73dd-220d-47db-817d-b700adb6101e" isExpanded="false" absoluteBounds="3.75, 9.125, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/USR_DATPER" />
-      <nestedChildShapes>
-        <elementListCompartment Id="7ce7d2b8-0ca2-4698-9b79-db06658fa538" absoluteBounds="3.765, 9.585, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <associationConnector edgePoints="[(1.75 : 8.2); (1.75 : 9.35); (3.75 : 9.35)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/USUARIOS/USUARIOS_USR_DATPER" />
-      <nodes>
-        <classShapeMoniker Id="f30a2f19-ff9e-43f8-a818-455adb09b373" />
-        <classShapeMoniker Id="5d0b73dd-220d-47db-817d-b700adb6101e" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="dcf0e606-db81-4871-b83d-02be4d7a852f" absoluteBounds="3.875, 20.125, 2, 3.3093082682291666">
+    <classShape Id="2bf65ef6-bafe-46a4-a706-ff948528ed02" absoluteBounds="11.5, 4.875, 2, 3.5016097005208335">
       <DataClassMoniker Name="/ModelExternoDataContext/CAT_CAMION" />
       <nestedChildShapes>
-        <elementListCompartment Id="12c4242d-a9d8-4a72-a509-49400a1b26c9" absoluteBounds="3.89, 20.585, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="1beb3084-44a3-4a3a-b7ce-4b6d0e7bf3df" absoluteBounds="11.515, 5.335, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.5 : 20.725); (3.875 : 20.725)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/CAT_CHOFER/CAT_CHOFER_CAT_CAMION" />
-      <nodes>
-        <classShapeMoniker Id="82a2582b-fe75-4155-9cb1-fd7b99009b22" />
-        <classShapeMoniker Id="dcf0e606-db81-4871-b83d-02be4d7a852f" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="c06862ff-5ddc-4bc6-8afc-fa16fe5b92d7" absoluteBounds="3.5, 16.375, 2, 3.6939111328124996">
+    <classShape Id="67b2b574-4c4a-40ca-8ac7-f9fa3b77d79c" absoluteBounds="0.75, 8, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/ModelExternoDataContext/USUARIOS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="803acd27-2e58-4a0b-8f28-9e075ad3b10b" absoluteBounds="0.765, 8.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3a50c21a-ba9c-425a-b965-700deec67b8f" absoluteBounds="8.75, 9.875, 2, 3.6939111328124987">
       <DataClassMoniker Name="/ModelExternoDataContext/CAT_CEDIS" />
       <nestedChildShapes>
-        <elementListCompartment Id="9ac18fb5-6bf5-40e8-889f-1a55effa3117" absoluteBounds="3.515, 16.835, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="2d9a6931-ddda-4e71-8f3b-f9d47d75a0e5" absoluteBounds="8.765, 10.335, 1.9700000000000002, 3.1339111328125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="23b81005-0c28-42d8-a310-4374e4dadcb8" isExpanded="false" absoluteBounds="6.125, 2.25, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/DETALLE_PEDIDO" />
+    <classShape Id="6765da9a-b804-4e9f-80c3-98e0a614c937" absoluteBounds="11.5, 2.25, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/ModelExternoDataContext/CAT_CHOFER" />
       <nestedChildShapes>
-        <elementListCompartment Id="e77d00a7-5450-4c5c-81d5-fd58db64211c" absoluteBounds="6.14, 2.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="935bd9a2-2903-488e-8c4a-0f7b281e6726" absoluteBounds="11.515, 2.71, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(4 : 6); (4 : 2.475); (6.125 : 2.475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/PEDIDO/PEDIDO_DETALLE_PEDIDO" />
-      <nodes>
-        <classShapeMoniker Id="89b21533-199a-4102-93d1-a8dc12e50653" />
-        <classShapeMoniker Id="23b81005-0c28-42d8-a310-4374e4dadcb8" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(4.875 : 1.325); (4.875 : 2.3312475); (6.125 : 2.3312475)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/PRODUCTO/PRODUCTO_DETALLE_PEDIDO" />
-      <nodes>
-        <classShapeMoniker Id="32e78e4c-701a-49f0-bbef-ad2258a768cd" />
-        <classShapeMoniker Id="23b81005-0c28-42d8-a310-4374e4dadcb8" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="4a4a6b8f-5dcc-4515-a5f5-a195fe65c4c5" isExpanded="false" absoluteBounds="17, 4.75, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/vAsignarPedido" />
+    <classShape Id="a1029db8-216a-466a-aec3-b0befe06645a" absoluteBounds="3.5, 14.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/ModelExternoDataContext/CAT_RUTA" />
       <nestedChildShapes>
-        <elementListCompartment Id="0074b197-5c39-4457-a90b-461d5d61c0e3" absoluteBounds="17.015, 5.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="4e1dba59-d32c-4886-b295-f73e6271d660" absoluteBounds="3.515, 15.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="888cf9e9-0af3-4a18-bb88-4ff56e7bf87e" absoluteBounds="1.25, 24.875, 2, 4.6554182942708326">
+    <classShape Id="7c927ddc-9a6f-412f-a405-19c215f9a214" absoluteBounds="8.75, 3, 2, 4.6554182942708326">
       <DataClassMoniker Name="/ModelExternoDataContext/CAT_TRANSPORTISTA" />
       <nestedChildShapes>
-        <elementListCompartment Id="ccdce12b-094f-4433-8f2d-8b15198f1d0f" absoluteBounds="1.2650000000000001, 25.335, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="69a98245-da8d-46c8-a7ca-cfb5e08642b5" absoluteBounds="8.765, 3.46, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(1.875 : 24.875); (1.875 : 20.95)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/CAT_TRANSPORTISTA/CAT_TRANSPORTISTA_CAT_CHOFER" />
-      <nodes>
-        <classShapeMoniker Id="888cf9e9-0af3-4a18-bb88-4ff56e7bf87e" />
-        <classShapeMoniker Id="82a2582b-fe75-4155-9cb1-fd7b99009b22" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(2.90625 : 24.875); (2.90625 : 22.2234041341146); (3.875 : 22.2234041341146)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/CAT_TRANSPORTISTA/CAT_TRANSPORTISTA_CAT_CAMION" />
-      <nodes>
-        <classShapeMoniker Id="888cf9e9-0af3-4a18-bb88-4ff56e7bf87e" />
-        <classShapeMoniker Id="dcf0e606-db81-4871-b83d-02be4d7a852f" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="ea8d7581-675e-4d7b-a38b-6953cba5cb4f" isExpanded="false" absoluteBounds="8.875, 7, 2, 0.45">
+    <classShape Id="47498eea-7f67-42fb-a2e9-3d6ed5976e4f" absoluteBounds="11.75, 9.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ModelExternoDataContext/CAT_TRATAMIENTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9546b8e4-8b6d-4608-8c65-a45500eb7d34" absoluteBounds="11.765, 10.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0afb0b20-24f0-45ff-940b-29fb7a6d99a3" absoluteBounds="11.75, 11.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ModelExternoDataContext/CIUDAD" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c5d56270-e2fb-4b9f-99bc-4f64ef5c8516" absoluteBounds="11.765, 12.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d3894ed7-ec5c-417c-b8b7-7060a5aca14a" absoluteBounds="6.75, 14.875, 2, 4.8477197265625005">
       <DataClassMoniker Name="/ModelExternoDataContext/CONTACTO_PACIENTE" />
       <nestedChildShapes>
-        <elementListCompartment Id="ef370508-be1f-4361-852c-bdd429009c2b" absoluteBounds="8.89, 7.46, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="bbd998b9-be93-49ac-a4c0-23f2d3eeb702" absoluteBounds="6.765, 15.335, 1.9700000000000002, 4.2877197265625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="b5496f5f-c627-4aad-aee3-2c763ff6a6cc" absoluteBounds="6.5, 8.75, 2, 2.5401025390625">
+    <classShape Id="1cb7efa9-7ad0-4b31-896b-cb1c8ed425c2" absoluteBounds="6.25, 2.875, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/ModelExternoDataContext/DETALLE_PEDIDO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c1d0848d-3c1f-48b7-8682-7ea9d24cdf11" absoluteBounds="6.265, 3.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ddac7395-0bff-43f2-9c5f-5d92a60c0ebf" absoluteBounds="6.25, 6.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ModelExternoDataContext/DETALLE_RUTA" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3d39a721-17a8-48da-a7ab-0320c1903ecb" absoluteBounds="6.265, 6.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="accc34c0-1ded-466a-a41a-4870a37fb6cd" absoluteBounds="9.75, 14.875, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/ModelExternoDataContext/DIAS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d4fc94c6-92a2-4a95-8e95-3108bcc17f6a" absoluteBounds="9.765, 15.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="abc0ea02-4e8f-4ee8-993c-1cbfe6f309f9" absoluteBounds="6.25, 8.625, 2, 2.5401025390625005">
       <DataClassMoniker Name="/ModelExternoDataContext/ENTREGA_PEDIDO" />
       <nestedChildShapes>
-        <elementListCompartment Id="c2c03b92-636e-4b5f-876f-a0339ba3903a" absoluteBounds="6.515, 9.21, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="f99a777c-2aba-4295-b94d-b16805c0984b" absoluteBounds="6.265, 9.085, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <associationConnector edgePoints="[(2.859375 : 4.825); (2.859375 : 10.5575512695312); (4.41666666666667 : 10.5575512695312 : JumpStart); (4.58333333333333 : 10.5575512695312 : JumpEnd); (6.5 : 10.5575512695312)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/PACIENTE/PACIENTE_ENTREGA_PEDIDO" />
-      <nodes>
-        <classShapeMoniker Id="a43dc94d-a384-4a4d-b0cd-4e0e7b231d7f" />
-        <classShapeMoniker Id="b5496f5f-c627-4aad-aee3-2c763ff6a6cc" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(3.46875 : 7.9631982421875); (3.46875 : 10.1600231347656); (4.41666666666667 : 10.1600231347656 : JumpStart); (4.58333333333333 : 10.1600231347656 : JumpEnd); (6.5 : 10.1600231347656)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/PEDIDO/PEDIDO_ENTREGA_PEDIDO" />
-      <nodes>
-        <classShapeMoniker Id="89b21533-199a-4102-93d1-a8dc12e50653" />
-        <classShapeMoniker Id="b5496f5f-c627-4aad-aee3-2c763ff6a6cc" />
-      </nodes>
-    </associationConnector>
-    <associationConnector edgePoints="[(3.59375 : 13.75); (3.59375 : 10.9550794042969); (4.41666666666667 : 10.9550794042969 : JumpStart); (4.58333333333333 : 10.9550794042969 : JumpEnd); (6.5 : 10.9550794042969)]" fixedFrom="NotFixed" fixedTo="NotFixed">
-      <AssociationMoniker Name="/ModelExternoDataContext/CAT_RUTA/CAT_RUTA_ENTREGA_PEDIDO" />
-      <nodes>
-        <classShapeMoniker Id="8fde68c5-1cc3-46c6-8351-a289e7633117" />
-        <classShapeMoniker Id="b5496f5f-c627-4aad-aee3-2c763ff6a6cc" />
-      </nodes>
-    </associationConnector>
-    <classShape Id="94083409-fc91-47e0-9f57-cb40054f214f" absoluteBounds="6.875, 15.375, 2, 2.1554996744791666">
+    <classShape Id="c9de4557-c78d-471b-aa75-71bc6fb6ad1c" absoluteBounds="12.75, 14.875, 2, 2.1554996744791666">
       <DataClassMoniker Name="/ModelExternoDataContext/ENTREGA_RUTA" />
       <nestedChildShapes>
-        <elementListCompartment Id="92234470-763a-4730-9f6d-91cb191f5c04" absoluteBounds="6.89, 15.835, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="4f80d1b2-2683-4d77-96c8-1359b5da4192" absoluteBounds="12.765, 15.335, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="5860f1b9-bcd2-410b-8533-2f929f7fc28d" isExpanded="false" absoluteBounds="17, 2.625, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/vRutasTransportista" />
+    <classShape Id="2e35f04c-0867-4b2f-9796-eb1acae7e183" absoluteBounds="14.75, 1.875, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/ModelExternoDataContext/ESTADOS" />
       <nestedChildShapes>
-        <elementListCompartment Id="373921d5-887b-4550-b35c-15d28492cf43" absoluteBounds="17.015, 3.085, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="a039f224-b6e3-43a5-9c5d-b35db93788c8" absoluteBounds="14.765, 2.335, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="8fcc60fb-ef3f-4917-8313-d8f4ddcb292b" isExpanded="false" absoluteBounds="14.625, 3.25, 2, 0.45">
-      <DataClassMoniker Name="/ModelExternoDataContext/HOME_CHOICE" />
+    <classShape Id="1b87445e-c4f6-4358-99c6-80f06100fcac" absoluteBounds="14.75, 3.875, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/ModelExternoDataContext/ESTATUS_MODULOS" />
       <nestedChildShapes>
-        <elementListCompartment Id="0f44bf9c-0182-4108-85aa-27f2622022fa" absoluteBounds="14.64, 3.71, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="bb8418ae-aa8d-4344-a623-cf4cd56d70f1" absoluteBounds="14.765, 4.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="dc6ea600-a8fc-412a-8360-c5a4092d6b2c" isExpanded="false" absoluteBounds="14.625, 2.5, 2, 0.45">
+    <classShape Id="4114f772-c147-456b-8d87-0b4318f53243" absoluteBounds="14.75, 6.875, 2, 1.9631982421874996">
+      <DataClassMoniker Name="/ModelExternoDataContext/GRUPOS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="7381eb07-b55a-4ab3-b10a-23af3e37aed1" absoluteBounds="14.765, 7.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e7774a9-67f9-4ea8-b16d-161e658adc33" absoluteBounds="14.75, 9.875, 2, 2.3478011067708344">
       <DataClassMoniker Name="/ModelExternoDataContext/HISTORIAL_HOME_CHOICE" />
       <nestedChildShapes>
-        <elementListCompartment Id="73ddf10f-efd6-42dc-a816-e9027d119923" absoluteBounds="14.64, 2.96, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="e233b2b2-78c2-45a5-9c87-eeca9d9a3db0" absoluteBounds="14.765, 10.335, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3a494e7c-4430-421d-8bba-d387c15f9eb5" absoluteBounds="15.75, 13.875, 2, 2.5401025390624969">
+      <DataClassMoniker Name="/ModelExternoDataContext/HOME_CHOICE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d8e0885e-38b7-40e2-8199-3671d1adbb35" absoluteBounds="15.765, 14.335, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9e1d2269-936d-4536-a072-6456091a6a7d" absoluteBounds="0.75, 0.75, 2, 6.3861311848958326">
+      <DataClassMoniker Name="/ModelExternoDataContext/PACIENTE" />
+      <nestedChildShapes>
+        <elementListCompartment Id="272d5bb2-c66e-4a9f-9c00-82f14ddd9c03" absoluteBounds="0.765, 1.21, 1.9700000000000002, 5.826131184895833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="9b766ff4-c8ae-4507-bfc1-65137e9b8121" absoluteBounds="3.5, 6, 2, 1.9631982421875005">
+      <DataClassMoniker Name="/ModelExternoDataContext/PEDIDO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="8494ef04-dee8-4f70-ac80-55ee3dd6ebf3" absoluteBounds="3.515, 6.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0b149e0a-bcac-4194-a150-ee9024e03d66" absoluteBounds="3.5, 1.25, 2, 3.5016097005208326">
+      <DataClassMoniker Name="/ModelExternoDataContext/PRODUCTO" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dad7794f-5f91-47d8-a4d7-fa1a5b3f7661" absoluteBounds="3.515, 1.71, 1.9700000000000002, 2.941609700520833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="74f0a6f1-2e1c-44ca-b570-7d83e63f931c" absoluteBounds="9.75, 17.875, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/ModelExternoDataContext/REGISTRO_CEDIS" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2df08c16-35fe-4c6c-8615-bd1d09a5f3c9" absoluteBounds="9.765, 18.335, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="93432788-b5ba-4682-be50-52131d9cf804" absoluteBounds="3.5, 9.375, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/ModelExternoDataContext/USR_DATPER" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c2e35ae9-a28d-46d6-b81f-2c7a1210ff81" absoluteBounds="3.515, 9.835, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(10.75 : 6.26520914713542); (11.5 : 6.26520914713542)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/CAT_TRANSPORTISTA/CAT_TRANSPORTISTA_CAT_CAMION" />
+      <nodes>
+        <classShapeMoniker Id="7c927ddc-9a6f-412f-a405-19c215f9a214" />
+        <classShapeMoniker Id="2bf65ef6-bafe-46a4-a706-ff948528ed02" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(10.75 : 3.60659912109375); (11.5 : 3.60659912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/CAT_TRANSPORTISTA/CAT_TRANSPORTISTA_CAT_CHOFER" />
+      <nodes>
+        <classShapeMoniker Id="7c927ddc-9a6f-412f-a405-19c215f9a214" />
+        <classShapeMoniker Id="6765da9a-b804-4e9f-80c3-98e0a614c937" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14.75); (5.875 : 14.375); (5.875 : 6.94314697265625); (6.25 : 6.94314697265625)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/CAT_RUTA/CAT_RUTA_DETALLE_RUTA" />
+      <nodes>
+        <classShapeMoniker Id="a1029db8-216a-466a-aec3-b0befe06645a" />
+        <classShapeMoniker Id="ddac7395-0bff-43f2-9c5f-5d92a60c0ebf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 14.78125); (6.46875 : 14.78125); (6.46875 : 11.1651025390625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/CAT_RUTA/CAT_RUTA_ENTREGA_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="a1029db8-216a-466a-aec3-b0befe06645a" />
+        <classShapeMoniker Id="abc0ea02-4e8f-4ee8-993c-1cbfe6f309f9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 3.91181359244792); (3.25 : 3.91181359244792); (3.25 : 5.28049967447917); (5.79166666666667 : 5.28049967447917 : JumpStart); (5.95833333333333 : 5.28049967447917 : JumpEnd); (7.25 : 5.28049967447917); (7.25 : 6.25)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/PACIENTE/PACIENTE_DETALLE_RUTA" />
+      <nodes>
+        <classShapeMoniker Id="9e1d2269-936d-4536-a072-6456091a6a7d" />
+        <classShapeMoniker Id="ddac7395-0bff-43f2-9c5f-5d92a60c0ebf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 7.13613118489583); (3.125 : 7.51113118489583); (3.125 : 8.25); (5.875 : 8.25); (6.25 : 8.625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ModelExternoDataContext/PACIENTE/PACIENTE_ENTREGA_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="9e1d2269-936d-4536-a072-6456091a6a7d" />
+        <classShapeMoniker Id="abc0ea02-4e8f-4ee8-993c-1cbfe6f309f9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(1.45923076923077 : 7.13613118489583); (1.45923076923077 : 7.38613118489583); (2.05461538461538 : 7.38613118489583); (2.05461538461538 : 7.13613118489583)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ModelExternoDataContext/PACIENTE/PACIENTE_PACIENTE" />
+      <nodes>
+        <classShapeMoniker Id="9e1d2269-936d-4536-a072-6456091a6a7d" />
+        <classShapeMoniker Id="9e1d2269-936d-4536-a072-6456091a6a7d" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6); (5.875 : 5.625); (5.875 : 3.95274983723958); (6.25 : 3.95274983723958)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/PEDIDO/PEDIDO_DETALLE_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="9b766ff4-c8ae-4507-bfc1-65137e9b8121" />
+        <classShapeMoniker Id="1cb7efa9-7ad0-4b31-896b-cb1c8ed425c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 6.53407348632813); (6.25 : 6.53407348632813)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/PEDIDO/PEDIDO_DETALLE_RUTA" />
+      <nodes>
+        <classShapeMoniker Id="9b766ff4-c8ae-4507-bfc1-65137e9b8121" />
+        <classShapeMoniker Id="ddac7395-0bff-43f2-9c5f-5d92a60c0ebf" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 7.90128098993389); (5.81607443490112 : 8.21735542483501 : JumpStart); (5.93392556509888 : 8.33520655503277 : JumpEnd); (6.0625 : 8.46378098993389); (6.0625 : 9.92630326953125); (6.25 : 9.92630326953125)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/PEDIDO/PEDIDO_ENTREGA_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="9b766ff4-c8ae-4507-bfc1-65137e9b8121" />
+        <classShapeMoniker Id="abc0ea02-4e8f-4ee8-993c-1cbfe6f309f9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 6.53681309244792); (3.5 : 6.53681309244792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/PACIENTE/PACIENTE_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="9e1d2269-936d-4536-a072-6456091a6a7d" />
+        <classShapeMoniker Id="9b766ff4-c8ae-4507-bfc1-65137e9b8121" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 8.0634254047476); (3.06607443490112 : 7.74735096984647 : JumpStart); (3.18392556509888 : 7.62949983964872 : JumpEnd); (3.3125 : 7.5009254047476); (3.3125 : 8.1506982421875); (3.5 : 7.9631982421875)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <AssociationMoniker Name="/ModelExternoDataContext/USUARIOS/USUARIOS_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="67b2b574-4c4a-40ca-8ac7-f9fa3b77d79c" />
+        <classShapeMoniker Id="9b766ff4-c8ae-4507-bfc1-65137e9b8121" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 3.35137491861979); (6.25 : 3.35137491861979)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/PRODUCTO/PRODUCTO_DETALLE_PEDIDO" />
+      <nodes>
+        <classShapeMoniker Id="0b149e0a-bcac-4194-a150-ee9024e03d66" />
+        <classShapeMoniker Id="1cb7efa9-7ad0-4b31-896b-cb1c8ed425c2" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 9.66909912109375); (3.5 : 9.66909912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/ModelExternoDataContext/USUARIOS/USUARIOS_USR_DATPER" />
+      <nodes>
+        <classShapeMoniker Id="67b2b574-4c4a-40ca-8ac7-f9fa3b77d79c" />
+        <classShapeMoniker Id="93432788-b5ba-4682-be50-52131d9cf804" />
+      </nodes>
+    </associationConnector>
+    <classShape Id="18ee6f20-566a-427f-9cef-a9bf515be37e" absoluteBounds="17.75, 0.75, 2, 2.3478011067708335">
+      <DataClassMoniker Name="/ModelExternoDataContext/vAsignarPedido" />
+      <nestedChildShapes>
+        <elementListCompartment Id="761b37e7-8e59-4e8f-b62f-e3a64b8ef35a" absoluteBounds="17.765, 1.21, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a69631bf-215c-4447-b215-3a62779b655e" absoluteBounds="17.75, 4.75, 2, 1.7708968098958327">
+      <DataClassMoniker Name="/ModelExternoDataContext/vCatalogoRutas" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d5a1b873-76fe-4555-aa00-c75fd371e08b" absoluteBounds="17.765, 5.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0c75015e-f9f8-4b00-8f7b-40bd4a16dad1" absoluteBounds="17.75, 7.75, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/ModelExternoDataContext/vChoferes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="79d4e82f-801e-48ee-944d-75659e7848db" absoluteBounds="17.765, 8.21, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2c86f434-0307-4ccc-963f-afcd18677702" absoluteBounds="15.75, 17.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/ModelExternoDataContext/vChoferRutaCamion" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3c129621-7e3b-440f-8192-dfb722f4cbbb" absoluteBounds="15.765, 18.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="89f3b905-dc6c-49b2-a257-4eeb0dfe8777" absoluteBounds="0.75, 18.75, 2, 3.1170068359375023">
+      <DataClassMoniker Name="/ModelExternoDataContext/vDetPedido" />
+      <nestedChildShapes>
+        <elementListCompartment Id="75633409-33ee-4f93-9573-230bc9c1c24e" absoluteBounds="0.765, 19.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0d7cf101-dabd-4320-9738-c4bb68a645e4" absoluteBounds="3.75, 18.75, 2, 4.6554182942708309">
+      <DataClassMoniker Name="/ModelExternoDataContext/vDetPedidoRuta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="b732a263-d356-4195-90a2-9e194641f25f" absoluteBounds="3.765, 19.21, 1.9700000000000002, 4.095418294270833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a9ab296c-533e-4177-8528-9cd9440ed332" absoluteBounds="18.75, 11.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/ModelExternoDataContext/vDetPedidoRutaCantidad" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a85e6073-40ad-46d0-918f-06282318d5a3" absoluteBounds="18.765, 12.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="96624b6e-cbd5-457d-b512-f1cbecdee858" absoluteBounds="6.75, 0.75, 2, 1.0016910807291666">
+      <DataClassMoniker Name="/ModelExternoDataContext/vHoraServer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="4a8d5a11-d20c-420d-85d3-4c5d6ca3277a" absoluteBounds="6.765, 1.21, 1.9700000000000002, 0.44169108072916669" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="0ca19f16-186e-453f-bd13-3df00822ea3a" absoluteBounds="18.75, 16.75, 2, 5.8092268880208309">
+      <DataClassMoniker Name="/ModelExternoDataContext/vListaPacientes" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ae069d13-e893-446e-ade4-696b95a35fec" absoluteBounds="18.765, 17.21, 1.9700000000000002, 5.249226888020833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5e44221f-02e0-4434-ac77-bc6f68df549e" absoluteBounds="20.75, 0.75, 2, 3.8862125651041666">
+      <DataClassMoniker Name="/ModelExternoDataContext/vPaciente" />
+      <nestedChildShapes>
+        <elementListCompartment Id="721fe5f0-8b84-46cf-aed1-d4dedf9fb14a" absoluteBounds="20.765, 1.21, 1.9700000000000002, 3.3262125651041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1958aac6-31e0-49a4-8be3-10f49bebd12f" absoluteBounds="20.75, 5.75, 2, 4.4631168619791666">
+      <DataClassMoniker Name="/ModelExternoDataContext/vPacienteMaquina" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ffc61a47-a4c0-440a-9a0f-f2a472cf46a9" absoluteBounds="20.765, 6.21, 1.9700000000000002, 3.903116861979167" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="999a16a9-412c-42c5-9000-2e47dfa7726b" absoluteBounds="6.75, 20.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ModelExternoDataContext/vPedidoManual" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1f762286-720f-4d30-8ee1-534ea2bcc271" absoluteBounds="6.765, 21.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ae104a7d-f1a8-42e9-8973-089abfca1ef4" absoluteBounds="9.75, 20.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ModelExternoDataContext/vPedidoMaquina" />
+      <nestedChildShapes>
+        <elementListCompartment Id="eb774296-63a8-4d32-83a2-c4bbe9ce44b6" absoluteBounds="9.765, 21.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="2d753d13-f23f-4b9d-90d6-32df88c409ab" absoluteBounds="12.75, 20.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/ModelExternoDataContext/vPedidos" />
+      <nestedChildShapes>
+        <elementListCompartment Id="893d961a-51bf-46d2-83ba-62a94521b4f2" absoluteBounds="12.765, 21.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd873966-8967-4915-8229-c670075e672c" absoluteBounds="21.75, 11.75, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/ModelExternoDataContext/vPedidosPacienteChofer" />
+      <nestedChildShapes>
+        <elementListCompartment Id="70bf20dd-2360-40c3-82e2-b1463eaa6d7e" absoluteBounds="21.765, 12.21, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="43c9f479-1129-4db6-a7fb-b30ebeff1f91" absoluteBounds="21.75, 14.75, 2, 4.2708154296875005">
+      <DataClassMoniker Name="/ModelExternoDataContext/vPedidosPacienteRuta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="52b15759-c04c-4856-8fe1-05da4efcc289" absoluteBounds="21.765, 15.21, 1.9700000000000002, 3.7108154296875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="21c3cdbd-a414-4483-851c-7d839939472c" absoluteBounds="21.75, 20.75, 2, 1.3862939453125023">
+      <DataClassMoniker Name="/ModelExternoDataContext/vPedidosPendientesRuta" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f0200f09-98ac-42e5-a8ee-7c214c08c03b" absoluteBounds="21.765, 21.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="d42a23de-10f0-47bf-9623-5f6cf56e7ced" absoluteBounds="23.75, 0.75, 2, 1.7708968098958329">
+      <DataClassMoniker Name="/ModelExternoDataContext/vRutasDelDia" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3fc9956b-8fd4-4241-9646-3a471875313c" absoluteBounds="23.765, 1.21, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97d164f0-7c91-4de4-a413-971dc09fd56f" absoluteBounds="23.75, 3.75, 2, 3.3093082682291666">
+      <DataClassMoniker Name="/ModelExternoDataContext/vRutasTransportista" />
+      <nestedChildShapes>
+        <elementListCompartment Id="c63ce003-6e44-4c69-95f9-976675ed8136" absoluteBounds="23.765, 4.21, 1.9700000000000002, 2.7493082682291665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5aceecec-f380-449a-a93a-947f88d8a73e" absoluteBounds="6.75, 23.75, 2, 1.9631982421875023">
+      <DataClassMoniker Name="/ModelExternoDataContext/vTransportistaActivo" />
+      <nestedChildShapes>
+        <elementListCompartment Id="525cf8e1-1930-4120-b8e6-752c983a94d8" absoluteBounds="6.765, 24.21, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

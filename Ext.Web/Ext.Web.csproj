@@ -104,6 +104,7 @@
     <Content Include="Paginas\Productos\DetalleProducto.aspx" />
     <Content Include="Paginas\Productos\ModificarProductos.aspx" />
     <Content Include="Paginas\Productos\Producto.aspx" />
+    <Content Include="Paginas\Rutas\ConsultaRutas.aspx" />
     <Content Include="Paginas\Rutas\DetalleRuta.aspx" />
     <Content Include="Paginas\Rutas\RutaTransporte.aspx" />
     <Content Include="Paginas\Transporte\ModificarTransportista.aspx" />
@@ -303,6 +304,13 @@
     </Compile>
     <Compile Include="Paginas\Productos\Producto.aspx.designer.cs">
       <DependentUpon>Producto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\Rutas\ConsultaRutas.aspx.cs">
+      <DependentUpon>ConsultaRutas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\Rutas\ConsultaRutas.aspx.designer.cs">
+      <DependentUpon>ConsultaRutas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Paginas\Rutas\DetalleRuta.aspx.cs">
       <DependentUpon>DetalleRuta.aspx</DependentUpon>

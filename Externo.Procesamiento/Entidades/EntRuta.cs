@@ -58,18 +58,26 @@ namespace Externo.Procesamiento.Entidades
 
         private DateTime _llegadaCedis = new DateTime(2000, 1, 1);
 
-public DateTime LlegadaCedis
-{
-  get { return _llegadaCedis; }
-  set { _llegadaCedis = value; }
-}
-        private DateTime _salidaCedis=new DateTime(2000,1,1);
+        public DateTime LlegadaCedis
+        {
+            get { return _llegadaCedis; }
+            set { _llegadaCedis = value; }
+        }
+                private DateTime _salidaCedis=new DateTime(2000,1,1);
 
-public DateTime SalidaCedis
-{
-  get { return _salidaCedis; }
-  set { _salidaCedis = value; }
-}
+        public DateTime SalidaCedis
+        {
+            get { return _salidaCedis; }
+            set { _salidaCedis = value; }
+        }
+
+        private string _cedisOrigen = string.Empty;
+
+        public string CedisOrigen
+        {
+            get { return _cedisOrigen; }
+            set { _cedisOrigen = value; }
+        }
 
     }
 }

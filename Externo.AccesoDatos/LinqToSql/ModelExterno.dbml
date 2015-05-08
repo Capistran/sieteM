@@ -1,106 +1,25 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DataSource" Class="ModelExternoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Connection Mode="AppSettings" ConnectionString="Data Source=sietemariaslogistica.com\MSSQLSERVER2008;User ID=siete_pruebasbaxter" SettingsObjectName="Externo.AccesoDatos.Properties.Settings" SettingsPropertyName="DataSourceConnectionString1" Provider="System.Data.SqlClient" />
-  <Table Name="siete_pruebasbaxter.vListaPacientes" Member="vListaPacientes">
-    <Type Name="vListaPacientes">
-      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_CONTACTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="APE_PAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="APE_MAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="NUM_RECEPCION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="NSS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="LATITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="LONGITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="FREC_VISITA" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="DIA_VISITA" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CALLE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="NUM_INT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="NUM_EXT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="COLONIA" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="CP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="CIUDAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="TEL_FIJO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="TEL_CELULAR" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="CVE_INE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="FEC_ALTA_SYS" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="CVE_PACIENTE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Column Name="DESCESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="DESCCIUDAD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.vChoferes" Member="vChoferes">
-    <Type Name="vChoferes">
-      <Column Name="Id_Chofer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="id_Transp" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="id_camion" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="nombre" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="ape_pat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="ape_mat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="cve_Ine" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="contraseña" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="num_lic_man" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.vTransportistaActivo" Member="vTransportistaActivo">
-    <Type Name="vTransportistaActivo">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="sietemar_Pruebas" Class="ModelExternoDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sietemariaslogistica.com;Initial Catalog=sietemar_Pruebas;User ID=siete_pruebasbaxter" SettingsObjectName="Externo.AccesoDatos.Properties.Settings" SettingsPropertyName="sietemar_PruebasConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.CAT_CAMION" Member="CAT_CAMION">
+    <Type Name="CAT_CAMION">
+      <Column Name="ID_CAMION" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CVE_TRANSP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RAZON_SOCIAL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RFC" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
-      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="DESC_CIUDAD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ID_CHOFER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PLACAS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="NUM_ECONOMICO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="MARCA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MODELO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CAP_CARGA" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="NO_POLIZA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COMPAÑIA_SEGURO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="VIGENCIA_POLIZA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="TIPO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="COD_BARRAS" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="ID_CHOFER_AUXILIAR" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Association Name="CAT_TRANSPORTISTA_CAT_CAMION" Member="CAT_TRANSPORTISTA" ThisKey="ID_TRANSP" OtherKey="ID_TRANSP" Type="CAT_TRANSPORTISTA" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.CIUDAD" Member="CIUDAD">
-    <Type Name="CIUDAD">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_CIUDAD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_ESTADO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DESC_CIUDAD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.DETALLE_RUTA" Member="DETALLE_RUTA">
-    <Type Name="DETALLE_RUTA">
-      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Association Name="PEDIDO_DETALLE_RUTA" Member="PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="PEDIDO" IsForeignKey="true" />
-      <Association Name="PACIENTE_DETALLE_RUTA" Member="PACIENTE" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PACIENTE" IsForeignKey="true" />
-      <Association Name="CAT_RUTA_DETALLE_RUTA" Member="CAT_RUTA" ThisKey="ID_RUTA" OtherKey="ID_RUTA" Type="CAT_RUTA" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.DIAS" Member="DIAS">
-    <Type Name="DIAS">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DIA" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.ESTADOS" Member="ESTADOS">
-    <Type Name="ESTADOS">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.ESTATUS_MODULOS" Member="ESTATUS_MODULOS">
-    <Type Name="ESTATUS_MODULOS">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DESC_ESTATUS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="MODULO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.GRUPOS" Member="GRUPOS">
-    <Type Name="GRUPOS">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="DESC_GPO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="HABILITADO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="CONSULTA" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="MODIFICACION" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="CTRL_TOTAL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.USUARIOS" Member="USUARIOS">
+  <Table Name="dbo.USUARIOS" Member="USUARIOS">
     <Type Name="USUARIOS">
       <Column Name="ID_USUARIO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="CONTRASEÑA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
@@ -112,41 +31,26 @@
       <Association Name="USUARIOS_USR_DATPER" Member="USR_DATPER" ThisKey="ID_USUARIO" OtherKey="ID_USUARIO" Type="USR_DATPER" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.PEDIDO" Member="PEDIDO">
-    <Type Name="PEDIDO">
-      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="FECHA_ALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ID_USUARIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Association Name="PEDIDO_DETALLE_RUTA" Member="DETALLE_RUTA" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="DETALLE_RUTA" />
-      <Association Name="PEDIDO_DETALLE_PEDIDO" Member="DETALLE_PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="DETALLE_PEDIDO" />
-      <Association Name="PEDIDO_ENTREGA_PEDIDO" Member="ENTREGA_PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="ENTREGA_PEDIDO" />
-      <Association Name="USUARIOS_PEDIDO" Member="USUARIOS" ThisKey="ID_USUARIO" OtherKey="ID_USUARIO" Type="USUARIOS" IsForeignKey="true" />
-      <Association Name="PACIENTE_PEDIDO" Member="PACIENTE" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PACIENTE" IsForeignKey="true" />
+  <Table Name="dbo.CAT_CEDIS" Member="CAT_CEDIS">
+    <Type Name="CAT_CEDIS">
+      <Column Name="ID_CEDIS" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DIRECCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CIUDAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="COLONIA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CALLE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NUM_EXT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NUM_INT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MANZANA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="SUPER_MAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CVE_CEDIS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.PRODUCTO" Member="PRODUCTO">
-    <Type Name="PRODUCTO">
-      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="CATEGORIA" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="PIEZA_POR_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="PRECIO" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
-      <Column Name="PAQ_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="PZA_PAQ" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="PRECIO_CAJA" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
-      <Column Name="PRECIO_PAQ" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
-      <Column Name="PRECIO_PZA" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
-      <Column Name="HABILITADO" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
-      <Column Name="COD_BARRAS" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Association Name="PRODUCTO_DETALLE_PEDIDO" Member="DETALLE_PEDIDO" ThisKey="ID_PRODUCTO" OtherKey="ID_PRODUCTO" Type="DETALLE_PEDIDO" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.CAT_CHOFER" Member="CAT_CHOFER">
+  <Table Name="dbo.CAT_CHOFER" Member="CAT_CHOFER">
     <Type Name="CAT_CHOFER">
       <Column Name="ID_CHOFER" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -154,33 +58,193 @@
       <Column Name="VIGENCIA_LIC" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="NUM_EMPLEADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="AUXILIAR" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
-      <Association Name="CAT_CHOFER_CAT_CAMION" Member="CAT_CAMION" ThisKey="ID_CHOFER" OtherKey="ID_CHOFER" Type="CAT_CAMION" />
       <Association Name="CAT_TRANSPORTISTA_CAT_CHOFER" Member="CAT_TRANSPORTISTA" ThisKey="ID_TRANSP" OtherKey="ID_TRANSP" Type="CAT_TRANSPORTISTA" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.vPedidoManual" Member="vPedidoManual">
-    <Type Name="vPedidoManual">
-      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+  <Table Name="dbo.CAT_RUTA" Member="CAT_RUTA">
+    <Type Name="CAT_RUTA">
+      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CEDIS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHA_VENCIMIENTO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CVE_RUTA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="CAT_RUTA_DETALLE_RUTA" Member="DETALLE_RUTA" ThisKey="ID_RUTA" OtherKey="ID_RUTA" Type="DETALLE_RUTA" />
+      <Association Name="CAT_RUTA_ENTREGA_PEDIDO" Member="ENTREGA_PEDIDO" ThisKey="ID_RUTA" OtherKey="ID_RUTA" Type="ENTREGA_PEDIDO" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.vPedidoMaquina" Member="vPedidoMaquina">
-    <Type Name="vPedidoMaquina">
-      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+  <Table Name="dbo.CAT_TRANSPORTISTA" Member="CAT_TRANSPORTISTA">
+    <Type Name="CAT_TRANSPORTISTA">
+      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RAZON_SOCIAL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RFC" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CIUDAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="COLONIA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CALLE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NUM_INT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NUM_EXT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="NUM_TRANSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CVE_TRANSP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="USUARIOWEB" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PASSWORDWEB" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="GPSWEB" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
+      <Column Name="SUPER_MAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="MANZANA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="LOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOMBRE_COM" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Association Name="CAT_TRANSPORTISTA_CAT_CAMION" Member="CAT_CAMION" ThisKey="ID_TRANSP" OtherKey="ID_TRANSP" Type="CAT_CAMION" />
+      <Association Name="CAT_TRANSPORTISTA_CAT_CHOFER" Member="CAT_CHOFER" ThisKey="ID_TRANSP" OtherKey="ID_TRANSP" Type="CAT_CHOFER" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.CAT_TRATAMIENTO" Member="CAT_TRATAMIENTO">
+  <Table Name="dbo.CAT_TRATAMIENTO" Member="CAT_TRATAMIENTO">
     <Type Name="CAT_TRATAMIENTO">
       <Column Name="ID_TRAT" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="DESC_TRAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.PACIENTE" Member="PACIENTE">
+  <Table Name="dbo.CIUDAD" Member="CIUDAD">
+    <Type Name="CIUDAD">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_CIUDAD" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_ESTADO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESC_CIUDAD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CONTACTO_PACIENTE" Member="CONTACTO_PACIENTE">
+    <Type Name="CONTACTO_PACIENTE">
+      <Column Name="ID_CONTACTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="APE_PAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="APE_MAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="FREC_VISITA" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CALLE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NUM_INT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NUM_EXT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="COLONIA" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="CP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="CIUDAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TEL_FIJO" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="TEL_CELULAR" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CVE_INE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SUPER_MAN" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MANZANA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LOTE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="CVE_PACIENTE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DETALLE_PEDIDO" Member="DETALLE_PEDIDO">
+    <Type Name="DETALLE_PEDIDO">
+      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="CANTIDAD_SUELTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CANTIDAD_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CANTIDAD_PAQ" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="HABILITADO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="LOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Association Name="PEDIDO_DETALLE_PEDIDO" Member="PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="PEDIDO" IsForeignKey="true" />
+      <Association Name="PRODUCTO_DETALLE_PEDIDO" Member="PRODUCTO" ThisKey="ID_PRODUCTO" OtherKey="ID_PRODUCTO" Type="PRODUCTO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DETALLE_RUTA" Member="DETALLE_RUTA">
+    <Type Name="DETALLE_RUTA">
+      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="CAT_RUTA_DETALLE_RUTA" Member="CAT_RUTA" ThisKey="ID_RUTA" OtherKey="ID_RUTA" Type="CAT_RUTA" IsForeignKey="true" />
+      <Association Name="PACIENTE_DETALLE_RUTA" Member="PACIENTE" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PACIENTE" IsForeignKey="true" />
+      <Association Name="PEDIDO_DETALLE_RUTA" Member="PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="PEDIDO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DIAS" Member="DIAS">
+    <Type Name="DIAS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DIA" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ENTREGA_PEDIDO" Member="ENTREGA_PEDIDO">
+    <Type Name="ENTREGA_PEDIDO">
+      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FECHA_LLEGADA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHA_SALIDA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ESTATUS_ENTREGA" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="OBSERVACION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Association Name="CAT_RUTA_ENTREGA_PEDIDO" Member="CAT_RUTA" ThisKey="ID_RUTA" OtherKey="ID_RUTA" Type="CAT_RUTA" IsForeignKey="true" />
+      <Association Name="PACIENTE_ENTREGA_PEDIDO" Member="PACIENTE" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PACIENTE" IsForeignKey="true" />
+      <Association Name="PEDIDO_ENTREGA_PEDIDO" Member="PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="PEDIDO" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ENTREGA_RUTA" Member="ENTREGA_RUTA">
+    <Type Name="ENTREGA_RUTA">
+      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_CEDIS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_CAMION" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="HORA_LLEGADA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="HORA_SALIDA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHA_EMBARQUE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID_CHOFER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ESTADOS" Member="ESTADOS">
+    <Type Name="ESTADOS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ESTATUS_MODULOS" Member="ESTATUS_MODULOS">
+    <Type Name="ESTATUS_MODULOS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESC_ESTATUS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="MODULO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GRUPOS" Member="GRUPOS">
+    <Type Name="GRUPOS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="DESC_GPO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="HABILITADO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CONSULTA" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="MODIFICACION" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="CTRL_TOTAL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HISTORIAL_HOME_CHOICE" Member="HISTORIAL_HOME_CHOICE">
+    <Type Name="HISTORIAL_HOME_CHOICE">
+      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TIPO_MOVIMIENTO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NO_SERIE_ANTERIOR" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="NO_SERIE_ACTUAL" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.HOME_CHOICE" Member="HOME_CHOICE">
+    <Type Name="HOME_CHOICE">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NO_SERIE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="MANUAL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="PINZAS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NO_SERIE_REEMPLAZO" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.PACIENTE" Member="PACIENTE">
     <Type Name="PACIENTE">
       <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
       <Column Name="ID_CONTACTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
@@ -212,27 +276,57 @@
       <Column Name="MANZANA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="LOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Association Name="PACIENTE_DETALLE_RUTA" Member="DETALLE_RUTA" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="DETALLE_RUTA" />
-      <Association Name="PACIENTE_PEDIDO" Member="PEDIDO" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PEDIDO" />
-      <Association Name="PACIENTE_PACIENTE" Member="PACIENTE2" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PACIENTE" Cardinality="One" />
       <Association Name="PACIENTE_ENTREGA_PEDIDO" Member="ENTREGA_PEDIDO" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="ENTREGA_PEDIDO" />
+      <Association Name="PACIENTE_PACIENTE" Member="PACIENTE2" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PACIENTE" Cardinality="One" />
+      <Association Name="PACIENTE_PEDIDO" Member="PEDIDO" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PEDIDO" />
       <Association Name="PACIENTE_PACIENTE" Member="PACIENTE1" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PACIENTE" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.CAT_RUTA" Member="CAT_RUTA">
-    <Type Name="CAT_RUTA">
-      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ID_CEDIS" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="FECHA_VENCIMIENTO" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+  <Table Name="dbo.PEDIDO" Member="PEDIDO">
+    <Type Name="PEDIDO">
+      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FECHA_ALTA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ID_USUARIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="ESTATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="CVE_RUTA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Association Name="CAT_RUTA_DETALLE_RUTA" Member="DETALLE_RUTA" ThisKey="ID_RUTA" OtherKey="ID_RUTA" Type="DETALLE_RUTA" />
-      <Association Name="CAT_RUTA_ENTREGA_PEDIDO" Member="ENTREGA_PEDIDO" ThisKey="ID_RUTA" OtherKey="ID_RUTA" Type="ENTREGA_PEDIDO" />
+      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="PEDIDO_DETALLE_PEDIDO" Member="DETALLE_PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="DETALLE_PEDIDO" />
+      <Association Name="PEDIDO_DETALLE_RUTA" Member="DETALLE_RUTA" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="DETALLE_RUTA" />
+      <Association Name="PEDIDO_ENTREGA_PEDIDO" Member="ENTREGA_PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="ENTREGA_PEDIDO" />
+      <Association Name="PACIENTE_PEDIDO" Member="PACIENTE" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PACIENTE" IsForeignKey="true" />
+      <Association Name="USUARIOS_PEDIDO" Member="USUARIOS" ThisKey="ID_USUARIO" OtherKey="ID_USUARIO" Type="USUARIOS" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.USR_DATPER" Member="USR_DATPER">
+  <Table Name="dbo.PRODUCTO" Member="PRODUCTO">
+    <Type Name="PRODUCTO">
+      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CATEGORIA" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="PIEZA_POR_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRECIO" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="PAQ_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PZA_PAQ" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PRECIO_CAJA" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="PRECIO_PAQ" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="PRECIO_PZA" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="HABILITADO" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="COD_BARRAS" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Association Name="PRODUCTO_DETALLE_PEDIDO" Member="DETALLE_PEDIDO" ThisKey="ID_PRODUCTO" OtherKey="ID_PRODUCTO" Type="DETALLE_PEDIDO" />
+    </Type>
+  </Table>
+  <Table Name="dbo.REGISTRO_CEDIS" Member="REGISTRO_CEDIS">
+    <Type Name="REGISTRO_CEDIS">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ID_CEDIS" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CHOFER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CAMION" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FECHA_ENTRADA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHA_SALIDA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.USR_DATPER" Member="USR_DATPER">
     <Type Name="USR_DATPER">
       <Column Name="ID_USUARIO" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="NOMBRE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
@@ -256,57 +350,7 @@
       <Association Name="USUARIOS_USR_DATPER" Member="USUARIOS" ThisKey="ID_USUARIO" OtherKey="ID_USUARIO" Type="USUARIOS" IsForeignKey="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.CAT_CAMION" Member="CAT_CAMION">
-    <Type Name="CAT_CAMION">
-      <Column Name="ID_CAMION" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_CHOFER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="PLACAS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="NUM_ECONOMICO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="MARCA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="MODELO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="CAP_CARGA" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
-      <Column Name="NO_POLIZA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="COMPAÑIA_SEGURO" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="VIGENCIA_POLIZA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="TIPO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="COD_BARRAS" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Association Name="CAT_CHOFER_CAT_CAMION" Member="CAT_CHOFER" ThisKey="ID_CHOFER" OtherKey="ID_CHOFER" Type="CAT_CHOFER" IsForeignKey="true" />
-      <Association Name="CAT_TRANSPORTISTA_CAT_CAMION" Member="CAT_TRANSPORTISTA" ThisKey="ID_TRANSP" OtherKey="ID_TRANSP" Type="CAT_TRANSPORTISTA" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.CAT_CEDIS" Member="CAT_CEDIS">
-    <Type Name="CAT_CEDIS">
-      <Column Name="ID_CEDIS" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="DIRECCION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CIUDAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="COLONIA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="CALLE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="NUM_EXT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="NUM_INT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="CP" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="MANZANA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="LOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="SUPER_MAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="CVE_CEDIS" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.DETALLE_PEDIDO" Member="DETALLE_PEDIDO">
-    <Type Name="DETALLE_PEDIDO">
-      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="CANTIDAD_SUELTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CANTIDAD_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CANTIDAD_PAQ" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="HABILITADO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Association Name="PEDIDO_DETALLE_PEDIDO" Member="PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="PEDIDO" IsForeignKey="true" />
-      <Association Name="PRODUCTO_DETALLE_PEDIDO" Member="PRODUCTO" ThisKey="ID_PRODUCTO" OtherKey="ID_PRODUCTO" Type="PRODUCTO" IsForeignKey="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.vAsignarPedido" Member="vAsignarPedido">
+  <Table Name="dbo.vAsignarPedido" Member="vAsignarPedido">
     <Type Name="vAsignarPedido">
       <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
@@ -318,40 +362,114 @@
       <Column Name="HABILITADO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.CAT_TRANSPORTISTA" Member="CAT_TRANSPORTISTA">
-    <Type Name="CAT_TRANSPORTISTA">
-      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="RAZON_SOCIAL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RFC" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
-      <Column Name="ESTADO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CIUDAD" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="COLONIA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="CALLE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="NUM_INT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="NUM_EXT" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="NUM_TRANSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="cp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="CVE_TRANSP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="USUARIOWEB" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="PASSWORDWEB" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="GPSWEB" Type="System.String" DbType="VarChar(200)" CanBeNull="true" />
-      <Column Name="SUPER_MAN" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="MANZANA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="LOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="NOMBRE_COM" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Association Name="CAT_TRANSPORTISTA_CAT_CHOFER" Member="CAT_CHOFER" ThisKey="ID_TRANSP" OtherKey="ID_TRANSP" Type="CAT_CHOFER" />
-      <Association Name="CAT_TRANSPORTISTA_CAT_CAMION" Member="CAT_CAMION" ThisKey="ID_TRANSP" OtherKey="ID_TRANSP" Type="CAT_CAMION" />
+  <Table Name="dbo.vCatalogoRutas" Member="vCatalogoRutas">
+    <Type Name="vCatalogoRutas">
+      <Column Name="CEDIS" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CVE_RUTA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.CONTACTO_PACIENTE" Member="CONTACTO_PACIENTE">
-    <Type Name="CONTACTO_PACIENTE">
-      <Column Name="ID_CONTACTO" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int" CanBeNull="true" />
+  <Table Name="dbo.vChoferes" Member="vChoferes">
+    <Type Name="vChoferes">
+      <Column Name="Id_Chofer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="num_empleado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="id_Transp" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_camion" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ape_pat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ape_mat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="cve_Ine" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="contraseña" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="num_lic_man" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vChoferRutaCamion" Member="vChoferRutaCamion">
+    <Type Name="vChoferRutaCamion">
+      <Column Name="id_ruta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_camion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_chofer" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vDetPedido" Member="vDetPedido">
+    <Type Name="vDetPedido">
+      <Column Name="id_pedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_producto" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="clave" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="marca" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="categoria" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="pieza_por_caja" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="precio" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="tipo" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="lote" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vDetPedidoRuta" Member="vDetPedidoRuta">
+    <Type Name="vDetPedidoRuta">
+      <Column Name="id_ruta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cve_ruta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="id_cedis" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_camion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_pedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_paciente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="id_producto" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="clave" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="marca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="categoria" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="pieza_por_caja" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="precio" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="cantidad_caja" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cantidad_paq" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cantidad_suelto" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="lote" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vDetPedidoRutaCantidad" Member="vDetPedidoRutaCantidad">
+    <Type Name="vDetPedidoRutaCantidad">
+      <Column Name="id_ruta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cve_ruta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="id_cedis" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_camion" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_producto" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="clave" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="marca" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="categoria" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="descripcion" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="precio" Type="System.Decimal" DbType="Decimal(19,2)" CanBeNull="true" />
+      <Column Name="cantidad" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="pieza_por_caja" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="cajas" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="sueltos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="lote" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vHoraServer" Member="vHoraServer">
+    <Type Name="vHoraServer">
+      <Column Name="HoraServidor" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vListaPacientes" Member="vListaPacientes">
+    <Type Name="vListaPacientes">
+      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_CONTACTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="NOMBRE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Column Name="APE_PAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Column Name="APE_MAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="NUM_RECEPCION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NSS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="LATITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LONGITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="FREC_VISITA" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="DIA_VISITA" Type="System.Int32" DbType="Int" CanBeNull="true" />
       <Column Name="CALLE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Column Name="NUM_INT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
       <Column Name="NUM_EXT" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
@@ -363,164 +481,245 @@
       <Column Name="TEL_CELULAR" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="CVE_INE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
       <Column Name="ESTATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-      <Column Name="SUPER_MAN" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="MANZANA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="LOTE" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="FEC_ALTA_SYS" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="CVE_PACIENTE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="DESCESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESCCIUDAD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.ENTREGA_PEDIDO" Member="ENTREGA_PEDIDO">
-    <Type Name="ENTREGA_PEDIDO">
-      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="FECHA_LLEGADA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="FECHA_SALIDA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ESTATUS_ENTREGA" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="OBSERVACION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Association Name="PACIENTE_ENTREGA_PEDIDO" Member="PACIENTE" ThisKey="ID_PACIENTE" OtherKey="ID_PACIENTE" Type="PACIENTE" IsForeignKey="true" />
-      <Association Name="PEDIDO_ENTREGA_PEDIDO" Member="PEDIDO" ThisKey="ID_PEDIDO" OtherKey="ID_PEDIDO" Type="PEDIDO" IsForeignKey="true" />
-      <Association Name="CAT_RUTA_ENTREGA_PEDIDO" Member="CAT_RUTA" ThisKey="ID_RUTA" OtherKey="ID_RUTA" Type="CAT_RUTA" IsForeignKey="true" />
+  <Table Name="dbo.vPaciente" Member="vPaciente">
+    <Type Name="vPaciente">
+      <Column Name="id_paciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ape_pat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ape_mat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="nss" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="latitud" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="longitud" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="calle" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="num_int" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="num_ext" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="colonia" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ciudad" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="cp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="estatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.ENTREGA_RUTA" Member="ENTREGA_RUTA">
-    <Type Name="ENTREGA_RUTA">
-      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_CEDIS" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_CAMION" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="HORA_LLEGADA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="HORA_SALIDA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="FECHA_EMBARQUE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ID_CHOFER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+  <Table Name="dbo.vPacienteMaquina" Member="vPacienteMaquina">
+    <Type Name="vPacienteMaquina">
+      <Column Name="id_paciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ape_pat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ape_mat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="nss" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="latitud" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="longitud" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="calle" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="num_int" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="num_ext" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="colonia" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ciudad" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="cp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="estatus" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="id_Home_Choice" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="no_serie_actual" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="no_serie_reemplazo" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.vRutasTransportista" Member="vRutasTransportista">
+  <Table Name="dbo.vPedidoManual" Member="vPedidoManual">
+    <Type Name="vPedidoManual">
+      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vPedidoMaquina" Member="vPedidoMaquina">
+    <Type Name="vPedidoMaquina">
+      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vPedidos" Member="vPedidos">
+    <Type Name="vPedidos">
+      <Column Name="id_Pedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sumarizado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fecha_alta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vPedidosPacienteChofer" Member="vPedidosPacienteChofer">
+    <Type Name="vPedidosPacienteChofer">
+      <Column Name="id_ruta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_paciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="id_pedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vPedidosPacienteRuta" Member="vPedidosPacienteRuta">
+    <Type Name="vPedidosPacienteRuta">
+      <Column Name="id_Pedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_Paciente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="id_ruta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="nombre" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ape_pat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ape_mat" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="nss" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="calle" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="num_int" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="num_ext" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="colonia" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="cp" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="desc_ciudad" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="estado" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="sumarizado" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="fecha_alta" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="estatus_entrega" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vPedidosPendientesRuta" Member="vPedidosPendientesRuta">
+    <Type Name="vPedidosPendientesRuta">
+      <Column Name="id_pedido" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_paciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="id_ruta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vRutasDelDia" Member="vRutasDelDia">
+    <Type Name="vRutasDelDia">
+      <Column Name="id_ruta" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cve_ruta" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="id_cedis" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="cve_cedis" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="mes" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.vRutasTransportista" Member="vRutasTransportista">
     <Type Name="vRutasTransportista">
       <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="ID_CAMION" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="ID_CHOFER" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CHOFER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
       <Column Name="PLACAS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="NUM_ECONOMICO" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
       <Column Name="MARCA" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
       <Column Name="MODELO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="ID_CHOFER_AUXILIAR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ID_CHOFER_AUXILIAR" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
       <Column Name="NOMBRE" Type="System.String" DbType="VarChar(92)" CanBeNull="true" />
       <Column Name="CVE_RUTA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="ESTATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
     </Type>
   </Table>
-  <Table Name="siete_pruebasbaxter.HOME_CHOICE" Member="HOME_CHOICE">
-    <Type Name="HOME_CHOICE">
-      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="NO_SERIE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Column Name="MANUAL" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="PINZAS" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="NO_SERIE_REEMPLAZO" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="siete_pruebasbaxter.HISTORIAL_HOME_CHOICE" Member="HISTORIAL_HOME_CHOICE">
-    <Type Name="HISTORIAL_HOME_CHOICE">
-      <Column Name="ID" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="ID_PACIENTE" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="TIPO_MOVIMIENTO" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
-      <Column Name="NO_SERIE_ANTERIOR" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Column Name="NO_SERIE_ACTUAL" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Column Name="FECHA_ENTREGA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="ESTATUS" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Function Name="siete_pruebasbaxter.spSel_InformacionUsuario" Method="spSel_InformacionUsuario">
-    <Parameter Name="idUsuario" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
-    <ElementType Name="spSel_InformacionUsuarioResult">
-      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(92)" CanBeNull="true" />
-      <Column Name="EMAIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="GRUPO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+  <Table Name="dbo.vTransportistaActivo" Member="vTransportistaActivo">
+    <Type Name="vTransportistaActivo">
+      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CVE_TRANSP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="RAZON_SOCIAL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="RFC" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
-    </ElementType>
-  </Function>
-  <Function Name="siete_pruebasbaxter.spSel_UsuarioLogin" Method="spSel_UsuarioLogin">
-    <Parameter Name="idusuario" Type="System.Int32" DbType="Int" />
-    <Parameter Name="contraseña" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="out" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESC_CIUDAD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Function Name="dbo.spActualizarEntregaMaquina" Method="spActualizarEntregaMaquina">
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="noSerie" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="manual" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="pinzas" Type="System.Boolean" DbType="Bit" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spIns_Usuarios" Method="spIns_Usuarios">
-    <Parameter Name="contraseña" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="mail" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="grupo" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idtransp" Type="System.Int32" DbType="Int" />
+  <Function Name="dbo.[spActualizarEstatusHoraLlegadaPedido ]" Method="spActualizarEstatusHoraLlegadaPedido_">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.[spActualizarEstatusHoraSalidaPedido ]" Method="spActualizarEstatusHoraSalidaPedido_">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.[spActualizarHoraEntradaCedis ]" Method="spActualizarHoraEntradaCedis_">
+    <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idCedis" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.[spActualizarHoraSalidaCedis ]" Method="spActualizarHoraSalidaCedis_">
+    <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idCedis" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idCamion" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spAsignarCamionChofer" Method="spAsignarCamionChofer">
+    <Parameter Name="idCamion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idChofer" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spAsignarChoferAuxiliar" Method="spAsignarChoferAuxiliar">
+    <Parameter Name="idChofer" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idChoferAuxiliar" Type="System.String" DbType="VarChar(5)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spCancelar_Pedido" Method="spCancelar_Pedido">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="motivo" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spCancelarEntregaMaquina" Method="spCancelarEntregaMaquina">
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="noSerie" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="manual" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="pinzas" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="motivo" Type="System.String" DbType="VarChar(30)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spConcluyeRuta" Method="spConcluyeRuta">
+    <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spEjecutarConsulta" Method="spEjecutarConsulta">
+    <Parameter Name="query" Type="System.String" DbType="VarChar(MAX)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spEntregarMaquina" Method="spEntregarMaquina">
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="noSerieActual" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spIns_AltaCamion" Method="spIns_AltaCamion">
+    <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idChofer" Type="System.Int32" DbType="Int" />
+    <Parameter Name="placas" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="numeco" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="marca" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="modelo" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="capacidad" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="nopoliza" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="seguro" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="vigenciapol" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spIns_AltaCedis" Method="spIns_AltaCedis">
     <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="apepat" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="apemat" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="rfc" Type="System.String" DbType="VarChar(13)" />
-    <Parameter Name="cve_ine" Type="System.String" DbType="VarChar(20)" />
     <Parameter Name="estado" Type="System.Int32" DbType="Int" />
     <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="colonia" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="calle" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="colonia" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="calle" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="num_ext" Type="System.String" DbType="VarChar(20)" />
     <Parameter Name="num_int" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="tel_casa" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="tel_cel" Type="System.String" DbType="VarChar(20)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_EstatusEliminadoPaciente" Method="spUpd_EstatusEliminadoPaciente">
-    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cvepaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_Paciente" Method="spUpd_Paciente">
-    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="nombre" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="ape_pat" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="ape_mat" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="num_recepcion" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="nss" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="latitud" Type="System.Double" DbType="Float" />
-    <Parameter Name="longitud" Type="System.Double" DbType="Float" />
-    <Parameter Name="frec_visita" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="dia_visita" Type="System.Int32" DbType="Int" />
-    <Parameter Name="calle" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="num_int" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="colonia" Type="System.String" DbType="VarChar(30)" />
     <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
-    <Parameter Name="tel_fijo" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="tel_cel" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="cve_ine" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="cvepaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="manzana" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="super_man" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="cve_cedis" Type="System.String" DbType="VarChar(100)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spIns_AltaProducto" Method="spIns_AltaProducto">
-    <Parameter Name="clave" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="marca" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="categoria" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="descripcion" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="pieza_por_caja" Type="System.Int32" DbType="Int" />
-    <Parameter Name="precio" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Parameter Name="paq_caja" Type="System.Int32" DbType="Int" />
-    <Parameter Name="pza_paq" Type="System.Int32" DbType="Int" />
-    <Parameter Name="precio_caja" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="precio_paq" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="precio_pza" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spIns_AltaChofer" Method="spIns_AltaChofer">
+  <Function Name="dbo.spIns_AltaChofer" Method="spIns_AltaChofer">
     <Parameter Name="idChofer" Type="System.Int32" DbType="Int" />
     <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
     <Parameter Name="numlic" Type="System.String" DbType="VarChar(50)" />
@@ -529,35 +728,14 @@
     <Parameter Name="auxiliar" Type="System.String" DbType="VarChar(4)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_Producto" Method="spUpd_Producto">
-    <Parameter Name="idproducto" Type="System.Int64" DbType="BigInt" />
-    <Parameter Name="clave" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="marca" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="categoria" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="descripcion" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="pieza_por_caja" Type="System.Int32" DbType="Int" />
-    <Parameter Name="precio" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Parameter Name="paq_caja" Type="System.Int32" DbType="Int" />
-    <Parameter Name="pza_paq" Type="System.Int32" DbType="Int" />
-    <Parameter Name="precio_caja" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="precio_paq" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="precio_pza" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spIns_AltaHomeChoice" Method="spIns_AltaHomeChoice">
+  <Function Name="dbo.spIns_AltaHomeChoice" Method="spIns_AltaHomeChoice">
     <Parameter Name="id_paciente" Type="System.Int32" DbType="Int" />
     <Parameter Name="no_serie" Type="System.Decimal" DbType="Decimal(19,0)" />
     <Parameter Name="manual" Type="System.Boolean" DbType="Bit" />
     <Parameter Name="pinzas" Type="System.Boolean" DbType="Bit" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_ActualizaTratamiento" Method="spUpd_ActualizaTratamiento">
-    <Parameter Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Parameter Name="idTratamiento" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spIns_AltaPaciente" Method="spIns_AltaPaciente">
+  <Function Name="dbo.spIns_AltaPaciente" Method="spIns_AltaPaciente">
     <Parameter Name="nombre" Type="System.String" DbType="VarChar(30)" />
     <Parameter Name="ape_pat" Type="System.String" DbType="VarChar(30)" />
     <Parameter Name="ape_mat" Type="System.String" DbType="VarChar(30)" />
@@ -585,33 +763,127 @@
     <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spSel_PedidoTratamiento" Method="spSel_PedidoTratamiento">
-    <Parameter Name="cvePaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Parameter Name="idTratamiento" Type="System.Int32" DbType="Int" />
-    <ElementType Name="spSel_PedidoTratamientoResult">
-      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="CANTIDAD_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CANTIDAD_PAQ" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CANTIDAD_SUELTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(92)" CanBeNull="true" />
-      <Column Name="HABILITADO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="TRATAMIENTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CVE_PACIENTE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-    </ElementType>
+  <Function Name="dbo.spIns_AltaProducto" Method="spIns_AltaProducto">
+    <Parameter Name="clave" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="marca" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="categoria" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="descripcion" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="pieza_por_caja" Type="System.Int32" DbType="Int" />
+    <Parameter Name="precio" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="paq_caja" Type="System.Int32" DbType="Int" />
+    <Parameter Name="pza_paq" Type="System.Int32" DbType="Int" />
+    <Parameter Name="precio_caja" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="precio_paq" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="precio_pza" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spSel_MesPedidoTratamiento" Method="spSel_MesPedidoTratamiento">
-    <Parameter Name="cvePaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Parameter Name="idTratamiento" Type="System.Int32" DbType="Int" />
-    <ElementType Name="spSel_MesPedidoTratamientoResult">
-      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-    </ElementType>
+  <Function Name="dbo.spIns_AltaTransportista" Method="spIns_AltaTransportista">
+    <Parameter Name="razonsocial" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="rfc" Type="System.String" DbType="VarChar(13)" />
+    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="colonia" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="calle" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="numext" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="numint" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="numtransp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="cvetransp" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="estatus" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="usuarioweb" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="passwordweb" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="gpsweb" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="nombre_com" Type="System.String" DbType="VarChar(100)" />
+    <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spSel_BuscaInfoOperador" Method="spSel_BuscaInfoOperador">
+  <Function Name="dbo.spIns_Contacto" Method="spIns_Contacto">
+    <Parameter Name="idpaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="ape_pat" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="ape_mat" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="frec_visita" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="calle" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="num_int" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="colonia" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="telfijo" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="tel_cel" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="cve_ine" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="super_man" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="manzana" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spIns_DetallePedido" Method="spIns_DetallePedido">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idproducto" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="cantidad_suelta" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cantidad_caja" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cantidad_paq" Type="System.Int32" DbType="Int" />
+    <Parameter Name="habilitado" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spIns_GenerarPedido" Method="spIns_GenerarPedido">
+    <Parameter Name="idruta" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="observacion" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="fecha_entrega" Type="System.DateTime" DbType="DateTime" />
+    <Parameter Name="idUsuario" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spIns_GenerarRuta" Method="spIns_GenerarRuta">
+    <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idcedis" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cve_ruta" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="idcamion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mes" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="fecha_embarque" Type="System.DateTime" DbType="DateTime" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spIns_Usuarios" Method="spIns_Usuarios">
+    <Parameter Name="contraseña" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="mail" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="grupo" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idtransp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="apepat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="apemat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="rfc" Type="System.String" DbType="VarChar(13)" />
+    <Parameter Name="cve_ine" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="colonia" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="calle" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="num_int" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="tel_casa" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="tel_cel" Type="System.String" DbType="VarChar(20)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spReemplazarMaquina" Method="spReemplazarMaquina">
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="noSerieAnterior" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="noSerieReemplazo" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spRegistrarHoraEntradaCedis" Method="spRegistrarHoraEntradaCedis">
+    <Parameter Name="idCedis" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idChofer" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idCamion" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spRegistrarHoraSalidaCedis" Method="spRegistrarHoraSalidaCedis">
+    <Parameter Name="idRegistro" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spSel_BuscaInfoOperador" Method="spSel_BuscaInfoOperador">
     <Parameter Name="numempleado" Type="System.String" DbType="VarChar(50)" />
     <ElementType Name="spSel_BuscaInfoOperadorResult">
       <Column Name="ID_CHOFER" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -636,7 +908,42 @@
       <Column Name="NSS" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="siete_pruebasbaxter.spSel_InfoTransportista" Method="spSel_InfoTransportista">
+  <Function Name="dbo.spSel_DetalleRuta" Method="spSel_DetalleRuta">
+    <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cve_ruta" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="mes" Type="System.String" DbType="VarChar(20)" />
+    <ElementType Name="spSel_DetalleRutaResult">
+      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RFC" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CVE_RUTA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RAZON_SOCIAL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="APE_PAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="APE_MAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="CVE_PACIENTE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="ESTATUS_ENTREGA" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="FECHA_LLEGADA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FECHA_SALIDA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LLEGADACEDIS" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="SALIDACEDIS" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="LATITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="LONGITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spSel_InformacionUsuario" Method="spSel_InformacionUsuario">
+    <Parameter Name="idUsuario" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spSel_InformacionUsuarioResult">
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(92)" CanBeNull="true" />
+      <Column Name="EMAIL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="GRUPO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="RAZON_SOCIAL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RFC" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+    </ElementType>
+  </Function>
+  <Function Name="dbo.spSel_InfoTransportista" Method="spSel_InfoTransportista">
     <Parameter Name="cve_transporte" Type="System.String" DbType="VarChar(100)" />
     <ElementType Name="spSel_InfoTransportistaResult">
       <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -660,24 +967,14 @@
       <Column Name="LOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="siete_pruebasbaxter.spIns_GenerarRuta" Method="spIns_GenerarRuta">
-    <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idcedis" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cve_ruta" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="idcamion" Type="System.Int32" DbType="Int" />
-    <Parameter Name="mes" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="fecha_embarque" Type="System.DateTime" DbType="DateTime" />
-    <Return Type="System.Int32" />
+  <Function Name="dbo.spSel_MesPedidoTratamiento" Method="spSel_MesPedidoTratamiento">
+    <Parameter Name="cvePaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="idTratamiento" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spSel_MesPedidoTratamientoResult">
+      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </ElementType>
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_ActualizaDetallePedido" Method="spUpd_ActualizaDetallePedido">
-    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idproducto" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="cantidad_suelta" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cantidad_caja" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cantidad_paq" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spSel_ObtienePedidoPaciente" Method="spSel_ObtienePedidoPaciente">
+  <Function Name="dbo.spSel_ObtienePedidoPaciente" Method="spSel_ObtienePedidoPaciente">
     <Parameter Name="cvepaciente" Type="System.String" DbType="VarChar(50)" />
     <ElementType Name="spSel_ObtienePedidoPacienteResult">
       <Column Name="id_Paciente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -688,66 +985,49 @@
       <Column Name="fecha_entrega" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
     </ElementType>
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_DetalleRuta" Method="spUpd_DetalleRuta">
-    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
+  <Function Name="dbo.spSel_PedidoTratamiento" Method="spSel_PedidoTratamiento">
+    <Parameter Name="cvePaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="idTratamiento" Type="System.Int32" DbType="Int" />
+    <ElementType Name="spSel_PedidoTratamientoResult">
+      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CANTIDAD_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CANTIDAD_PAQ" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CANTIDAD_SUELTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(92)" CanBeNull="true" />
+      <Column Name="HABILITADO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TRATAMIENTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CVE_PACIENTE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+    </ElementType>
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_EntregaPedido" Method="spUpd_EntregaPedido">
-    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spIns_AltaCedis" Method="spIns_AltaCedis">
-    <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="colonia" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="calle" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="num_int" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="manzana" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="super_man" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="cve_cedis" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_Cedis" Method="spUpd_Cedis">
-    <Parameter Name="idCedis" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cve_cedis" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="colonia" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="calle" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="num_int" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="manzana" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="super_man" Type="System.String" DbType="VarChar(50)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spIns_GenerarPedido" Method="spIns_GenerarPedido">
+  <Function Name="dbo.spSel_PedidoTratamientoMes" Method="spSel_PedidoTratamientoMes">
+    <Parameter Name="cvePaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="idTratamiento" Type="System.Int32" DbType="Int" />
+    <Parameter Name="mes" Type="System.String" DbType="VarChar(15)" />
     <Parameter Name="idruta" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="observacion" Type="System.String" DbType="VarChar(MAX)" />
-    <Parameter Name="fecha_entrega" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="idUsuario" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
+    <ElementType Name="spSel_PedidoTratamientoMesResult">
+      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
+      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="CANTIDAD_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CANTIDAD_PAQ" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CANTIDAD_SUELTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(92)" CanBeNull="true" />
+      <Column Name="HABILITADO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="TRATAMIENTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CVE_PACIENTE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
+      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </ElementType>
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_CancelarPedidoCambio" Method="spUpd_CancelarPedidoCambio">
-    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_CancelarEntregaPedidoCambio" Method="spUpd_CancelarEntregaPedidoCambio">
-    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spSel_RutaPacientes" Method="spSel_RutaPacientes">
+  <Function Name="dbo.spSel_RutaPacientes" Method="spSel_RutaPacientes">
     <Parameter Name="idruta" Type="System.Int32" DbType="Int" />
     <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
     <ElementType Name="spSel_RutaPacientesResult">
@@ -764,14 +1044,36 @@
       <Column Name="FECHA_SALIDA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
       <Column Name="LATITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
       <Column Name="LONGITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
     </ElementType>
   </Function>
-  <Function Name="siete_pruebasbaxter.spIns_AltaCamion" Method="spIns_AltaCamion">
+  <Function Name="dbo.spSel_UsuarioLogin" Method="spSel_UsuarioLogin">
+    <Parameter Name="idusuario" Type="System.Int32" DbType="Int" />
+    <Parameter Name="contraseña" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="out" Type="System.Boolean" DbType="Bit" Direction="InOut" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spSurtir_Pedido" Method="spSurtir_Pedido">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_ActualizaDetallePedido" Method="spUpd_ActualizaDetallePedido">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idproducto" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="cantidad_suelta" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cantidad_caja" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cantidad_paq" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_ActualizaTratamiento" Method="spUpd_ActualizaTratamiento">
+    <Parameter Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="idTratamiento" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_Camion" Method="spUpd_Camion">
     <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idChofer" Type="System.Int32" DbType="Int" />
-    <Parameter Name="placas" Type="System.String" DbType="VarChar(15)" />
     <Parameter Name="numeco" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="placas" Type="System.String" DbType="VarChar(15)" />
     <Parameter Name="marca" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="modelo" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="capacidad" Type="System.Decimal" DbType="Decimal(19,0)" />
@@ -781,20 +1083,80 @@
     <Parameter Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_Camion" Method="spUpd_Camion">
-    <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
-    <Parameter Name="numeco" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="placas" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="marca" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="modelo" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="capacidad" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Parameter Name="nopoliza" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="seguro" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="vigenciapol" Type="System.DateTime" DbType="DateTime" />
-    <Parameter Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" />
+  <Function Name="dbo.spUpd_CancelarEntregaPedidoCambio" Method="spUpd_CancelarEntregaPedidoCambio">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_Operador" Method="spUpd_Operador">
+  <Function Name="dbo.spUpd_CancelarPedidoCambio" Method="spUpd_CancelarPedidoCambio">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_Cedis" Method="spUpd_Cedis">
+    <Parameter Name="idCedis" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cve_cedis" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="colonia" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="calle" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="num_int" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="manzana" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="super_man" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_Contacto" Method="spUpd_Contacto">
+    <Parameter Name="idpaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="ape_pat" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="ape_mat" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="frec_visita" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="calle" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="num_int" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="colonia" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="telfijo" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="tel_cel" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="cve_ine" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="super_man" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="manzana" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_DetallePedido" Method="spUpd_DetallePedido">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idproducto" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="cantidad_suelta" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cantidad_caja" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cantidad_paq" Type="System.Int32" DbType="Int" />
+    <Parameter Name="habilitado" Type="System.Boolean" DbType="Bit" />
+    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_DetalleRuta" Method="spUpd_DetalleRuta">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_EntregaPedido" Method="spUpd_EntregaPedido">
+    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_EstatusEliminadoPaciente" Method="spUpd_EstatusEliminadoPaciente">
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="cvepaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_Operador" Method="spUpd_Operador">
     <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
     <Parameter Name="numempleado" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="numlic" Type="System.String" DbType="VarChar(50)" />
@@ -820,26 +1182,54 @@
     <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spIns_AltaTransportista" Method="spIns_AltaTransportista">
-    <Parameter Name="razonsocial" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="rfc" Type="System.String" DbType="VarChar(13)" />
-    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
-    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="colonia" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="calle" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="numext" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="numint" Type="System.String" DbType="VarChar(20)" />
-    <Parameter Name="numtransp" Type="System.Int32" DbType="Int" />
+  <Function Name="dbo.spUpd_Paciente" Method="spUpd_Paciente">
+    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
+    <Parameter Name="nombre" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="ape_pat" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="ape_mat" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="num_recepcion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="nss" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="latitud" Type="System.Double" DbType="Float" />
+    <Parameter Name="longitud" Type="System.Double" DbType="Float" />
+    <Parameter Name="frec_visita" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="dia_visita" Type="System.Int32" DbType="Int" />
+    <Parameter Name="calle" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="num_int" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="colonia" Type="System.String" DbType="VarChar(30)" />
     <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="cvetransp" Type="System.String" DbType="VarChar(100)" />
-    <Parameter Name="estatus" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="usuarioweb" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="passwordweb" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="gpsweb" Type="System.String" DbType="VarChar(200)" />
-    <Parameter Name="nombre_com" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
+    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
+    <Parameter Name="tel_fijo" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="tel_cel" Type="System.String" DbType="VarChar(15)" />
+    <Parameter Name="cve_ine" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="cvepaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
     <Return Type="System.Int32" />
   </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_ActualizaTransportista" Method="spUpd_ActualizaTransportista">
+  <Function Name="dbo.spUpd_Producto" Method="spUpd_Producto">
+    <Parameter Name="idproducto" Type="System.Int64" DbType="BigInt" />
+    <Parameter Name="clave" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="marca" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="categoria" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="descripcion" Type="System.String" DbType="VarChar(MAX)" />
+    <Parameter Name="pieza_por_caja" Type="System.Int32" DbType="Int" />
+    <Parameter Name="precio" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="cod_barras" Type="System.Decimal" DbType="Decimal(19,0)" />
+    <Parameter Name="paq_caja" Type="System.Int32" DbType="Int" />
+    <Parameter Name="pza_paq" Type="System.Int32" DbType="Int" />
+    <Parameter Name="precio_caja" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="precio_paq" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Parameter Name="precio_pza" Type="System.Decimal" DbType="Decimal(19,2)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spValidarSumarizado" Method="spValidarSumarizado">
+    <Parameter Name="idRuta" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idCamion" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idCedis" Type="System.Int32" DbType="Int" />
+    <Parameter Name="idChofer" Type="System.Int32" DbType="Int" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.spUpd_ActualizaTransportista" Method="spUpd_ActualizaTransportista">
     <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
     <Parameter Name="cvetransp" Type="System.String" DbType="VarChar(100)" />
     <Parameter Name="razonsocial" Type="System.String" DbType="VarChar(100)" />
@@ -860,128 +1250,6 @@
     <Parameter Name="manzana" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
     <Parameter Name="nombre_com" Type="System.String" DbType="VarChar(100)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spIns_Contacto" Method="spIns_Contacto">
-    <Parameter Name="idpaciente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="nombre" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="ape_pat" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="ape_mat" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="frec_visita" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="calle" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="num_int" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="colonia" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
-    <Parameter Name="telfijo" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="tel_cel" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="cve_ine" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="super_man" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="manzana" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_Contacto" Method="spUpd_Contacto">
-    <Parameter Name="idpaciente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cve_paciente" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Parameter Name="nombre" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="ape_pat" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="ape_mat" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="frec_visita" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="calle" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="num_int" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="num_ext" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="colonia" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="cp" Type="System.String" DbType="VarChar(10)" />
-    <Parameter Name="ciudad" Type="System.Int32" DbType="Int" />
-    <Parameter Name="estado" Type="System.Int32" DbType="Int" />
-    <Parameter Name="telfijo" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="tel_cel" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="cve_ine" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="super_man" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="manzana" Type="System.String" DbType="VarChar(50)" />
-    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spIns_DetallePedido" Method="spIns_DetallePedido">
-    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idproducto" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="cantidad_suelta" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cantidad_caja" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cantidad_paq" Type="System.Int32" DbType="Int" />
-    <Parameter Name="habilitado" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spSel_PedidoTratamientoMes" Method="spSel_PedidoTratamientoMes">
-    <Parameter Name="cvePaciente" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Parameter Name="idTratamiento" Type="System.Int32" DbType="Int" />
-    <Parameter Name="mes" Type="System.String" DbType="VarChar(15)" />
-    <Parameter Name="idruta" Type="System.Int32" DbType="Int" />
-    <ElementType Name="spSel_PedidoTratamientoMesResult">
-      <Column Name="ID_PRODUCTO" Type="System.Int64" DbType="BigInt NOT NULL" CanBeNull="false" />
-      <Column Name="ID_PEDIDO" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CLAVE" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
-      <Column Name="MARCA" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
-      <Column Name="DESCRIPCION" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
-      <Column Name="CANTIDAD_CAJA" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CANTIDAD_PAQ" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CANTIDAD_SUELTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="LOTE" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(92)" CanBeNull="true" />
-      <Column Name="HABILITADO" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
-      <Column Name="TRATAMIENTO" Type="System.Int32" DbType="Int" CanBeNull="true" />
-      <Column Name="CVE_PACIENTE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
-      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="siete_pruebasbaxter.spSel_DetalleRuta" Method="spSel_DetalleRuta">
-    <Parameter Name="idTransp" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cve_ruta" Type="System.String" DbType="VarChar(30)" />
-    <Parameter Name="mes" Type="System.String" DbType="VarChar(20)" />
-    <ElementType Name="spSel_DetalleRutaResult">
-      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="RFC" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
-      <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CVE_RUTA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RAZON_SOCIAL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="NOMBRE" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="APE_PAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="APE_MAT" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="CVE_PACIENTE" Type="System.Decimal" DbType="Decimal(19,0)" CanBeNull="true" />
-      <Column Name="ESTATUS_ENTREGA" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
-      <Column Name="FECHA_LLEGADA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="FECHA_SALIDA" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="LLEGADACEDIS" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="SALIDACEDIS" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
-      <Column Name="LATITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="LONGITUD" Type="System.Double" DbType="Float" CanBeNull="true" />
-      <Column Name="MOT_CANCELACION" Type="System.String" DbType="VarChar(100) NOT NULL" CanBeNull="false" />
-    </ElementType>
-  </Function>
-  <Function Name="siete_pruebasbaxter.spUpd_DetallePedido" Method="spUpd_DetallePedido">
-    <Parameter Name="idPedido" Type="System.Int32" DbType="Int" />
-    <Parameter Name="idproducto" Type="System.Decimal" DbType="Decimal(19,2)" />
-    <Parameter Name="cantidad_suelta" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cantidad_caja" Type="System.Int32" DbType="Int" />
-    <Parameter Name="cantidad_paq" Type="System.Int32" DbType="Int" />
-    <Parameter Name="habilitado" Type="System.Boolean" DbType="Bit" />
-    <Parameter Name="lote" Type="System.String" DbType="VarChar(50)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spReemplazarMaquina" Method="spReemplazarMaquina">
-    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="noSerieAnterior" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Parameter Name="noSerieReemplazo" Type="System.Decimal" DbType="Decimal(19,0)" />
-    <Return Type="System.Int32" />
-  </Function>
-  <Function Name="siete_pruebasbaxter.spEntregarMaquina" Method="spEntregarMaquina">
-    <Parameter Name="idPaciente" Type="System.Int32" DbType="Int" />
-    <Parameter Name="noSerieActual" Type="System.Decimal" DbType="Decimal(19,0)" />
     <Return Type="System.Int32" />
   </Function>
 </Database>
