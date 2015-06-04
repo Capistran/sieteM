@@ -437,19 +437,19 @@ namespace Externo.AccesoDatos.LinqToSql
 			}
 		}
 		
-		public System.Data.Linq.Table<vRutasTransportista> vRutasTransportista
-		{
-			get
-			{
-				return this.GetTable<vRutasTransportista>();
-			}
-		}
-		
 		public System.Data.Linq.Table<vTransportistaActivo> vTransportistaActivo
 		{
 			get
 			{
 				return this.GetTable<vTransportistaActivo>();
+			}
+		}
+		
+		public System.Data.Linq.Table<vRutasTransportista> vRutasTransportista
+		{
+			get
+			{
+				return this.GetTable<vRutasTransportista>();
 			}
 		}
 		
@@ -10288,6 +10288,123 @@ namespace Externo.AccesoDatos.LinqToSql
 		}
 	}
 	
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.vTransportistaActivo")]
+	public partial class vTransportistaActivo
+	{
+		
+		private int _ID_TRANSP;
+		
+		private string _CVE_TRANSP;
+		
+		private string _RAZON_SOCIAL;
+		
+		private string _RFC;
+		
+		private string _ESTADO;
+		
+		private string _DESC_CIUDAD;
+		
+		public vTransportistaActivo()
+		{
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_TRANSP", DbType="Int NOT NULL")]
+		public int ID_TRANSP
+		{
+			get
+			{
+				return this._ID_TRANSP;
+			}
+			set
+			{
+				if ((this._ID_TRANSP != value))
+				{
+					this._ID_TRANSP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CVE_TRANSP", DbType="VarChar(100)")]
+		public string CVE_TRANSP
+		{
+			get
+			{
+				return this._CVE_TRANSP;
+			}
+			set
+			{
+				if ((this._CVE_TRANSP != value))
+				{
+					this._CVE_TRANSP = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RAZON_SOCIAL", DbType="VarChar(100)")]
+		public string RAZON_SOCIAL
+		{
+			get
+			{
+				return this._RAZON_SOCIAL;
+			}
+			set
+			{
+				if ((this._RAZON_SOCIAL != value))
+				{
+					this._RAZON_SOCIAL = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RFC", DbType="VarChar(13)")]
+		public string RFC
+		{
+			get
+			{
+				return this._RFC;
+			}
+			set
+			{
+				if ((this._RFC != value))
+				{
+					this._RFC = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ESTADO", DbType="VarChar(50)")]
+		public string ESTADO
+		{
+			get
+			{
+				return this._ESTADO;
+			}
+			set
+			{
+				if ((this._ESTADO != value))
+				{
+					this._ESTADO = value;
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DESC_CIUDAD", DbType="VarChar(100)")]
+		public string DESC_CIUDAD
+		{
+			get
+			{
+				return this._DESC_CIUDAD;
+			}
+			set
+			{
+				if ((this._DESC_CIUDAD != value))
+				{
+					this._DESC_CIUDAD = value;
+				}
+			}
+		}
+	}
+	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.vRutasTransportista")]
 	public partial class vRutasTransportista
 	{
@@ -10317,6 +10434,8 @@ namespace Externo.AccesoDatos.LinqToSql
 		private string _MES;
 		
 		private string _ESTATUS;
+		
+		private string _NOMBREAUXILIAR;
 		
 		public vRutasTransportista()
 		{
@@ -10529,120 +10648,19 @@ namespace Externo.AccesoDatos.LinqToSql
 				}
 			}
 		}
-	}
-	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.vTransportistaActivo")]
-	public partial class vTransportistaActivo
-	{
 		
-		private int _ID_TRANSP;
-		
-		private string _CVE_TRANSP;
-		
-		private string _RAZON_SOCIAL;
-		
-		private string _RFC;
-		
-		private string _ESTADO;
-		
-		private string _DESC_CIUDAD;
-		
-		public vTransportistaActivo()
-		{
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ID_TRANSP", DbType="Int NOT NULL")]
-		public int ID_TRANSP
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_NOMBREAUXILIAR", DbType="VarChar(92)")]
+		public string NOMBREAUXILIAR
 		{
 			get
 			{
-				return this._ID_TRANSP;
+				return this._NOMBREAUXILIAR;
 			}
 			set
 			{
-				if ((this._ID_TRANSP != value))
+				if ((this._NOMBREAUXILIAR != value))
 				{
-					this._ID_TRANSP = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_CVE_TRANSP", DbType="VarChar(100)")]
-		public string CVE_TRANSP
-		{
-			get
-			{
-				return this._CVE_TRANSP;
-			}
-			set
-			{
-				if ((this._CVE_TRANSP != value))
-				{
-					this._CVE_TRANSP = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RAZON_SOCIAL", DbType="VarChar(100)")]
-		public string RAZON_SOCIAL
-		{
-			get
-			{
-				return this._RAZON_SOCIAL;
-			}
-			set
-			{
-				if ((this._RAZON_SOCIAL != value))
-				{
-					this._RAZON_SOCIAL = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_RFC", DbType="VarChar(13)")]
-		public string RFC
-		{
-			get
-			{
-				return this._RFC;
-			}
-			set
-			{
-				if ((this._RFC != value))
-				{
-					this._RFC = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_ESTADO", DbType="VarChar(50)")]
-		public string ESTADO
-		{
-			get
-			{
-				return this._ESTADO;
-			}
-			set
-			{
-				if ((this._ESTADO != value))
-				{
-					this._ESTADO = value;
-				}
-			}
-		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_DESC_CIUDAD", DbType="VarChar(100)")]
-		public string DESC_CIUDAD
-		{
-			get
-			{
-				return this._DESC_CIUDAD;
-			}
-			set
-			{
-				if ((this._DESC_CIUDAD != value))
-				{
-					this._DESC_CIUDAD = value;
+					this._NOMBREAUXILIAR = value;
 				}
 			}
 		}

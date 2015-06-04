@@ -84,6 +84,7 @@ namespace Externo.Procesamiento.Procesos
                     _entRuta.Modelo = rutas.MODELO == null ? "" : rutas.MODELO;
                     //_entRuta.CapacidadCarga = (int)rutas.CAP_CARGA;
                     _entRuta.Mes = rutas.MES;
+                    _entRuta.NombreAuxiliar = rutas.NOMBREAUXILIAR;
 
                 }
             }

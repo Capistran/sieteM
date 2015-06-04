@@ -53,6 +53,10 @@
                     <td><asp:Label ID="lblTransporte" runat="server"></asp:Label>
                     </td>
                     </tr>
+                    <tr>
+                    <td><label>Auxiliar:</label></td>
+                    <td><asp:Label ID="lblAuxiliar" runat="server"></asp:Label></td>
+                    </tr>
                 </tr>
             </table>
     </td>

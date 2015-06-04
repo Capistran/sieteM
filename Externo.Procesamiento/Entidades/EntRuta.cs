@@ -79,5 +79,13 @@ namespace Externo.Procesamiento.Entidades
             set { _cedisOrigen = value; }
         }
 
+        private string _nombreAuxiliar = string.Empty;
+
+        public string NombreAuxiliar
+        {
+            get { return _nombreAuxiliar; }
+            set { _nombreAuxiliar = value; }
+        }
+
     }
 }

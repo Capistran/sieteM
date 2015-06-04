@@ -75,11 +75,13 @@ namespace Ext.Web
             {
                 lblChofer.Text = rutas.Nombre;
                 lblTransporte.Text = rutas.Marca.ToUpper() + "-" + rutas.Modelo.ToUpper();
+                lblAuxiliar.Text = rutas.NombreAuxiliar;
             }
             else
             {
                 lblChofer.Text = "NO ASIGNADO";
                 lblTransporte.Text = "NO ASIGNADO";
+                lblAuxiliar.Text = "NO ASIGNADO";
             }
             //lblMes.Text = rutas.Mes.ToUpper();
         }

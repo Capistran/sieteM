@@ -599,6 +599,16 @@
       <Column Name="mes" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
     </Type>
   </Table>
+  <Table Name="dbo.vTransportistaActivo" Member="vTransportistaActivo">
+    <Type Name="vTransportistaActivo">
+      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CVE_TRANSP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RAZON_SOCIAL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="RFC" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
+      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DESC_CIUDAD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+    </Type>
+  </Table>
   <Table Name="dbo.vRutasTransportista" Member="vRutasTransportista">
     <Type Name="vRutasTransportista">
       <Column Name="ID_RUTA" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
@@ -614,16 +624,7 @@
       <Column Name="CVE_RUTA" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
       <Column Name="MES" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
       <Column Name="ESTATUS" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
-    </Type>
-  </Table>
-  <Table Name="dbo.vTransportistaActivo" Member="vTransportistaActivo">
-    <Type Name="vTransportistaActivo">
-      <Column Name="ID_TRANSP" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
-      <Column Name="CVE_TRANSP" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RAZON_SOCIAL" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
-      <Column Name="RFC" Type="System.String" DbType="VarChar(13)" CanBeNull="true" />
-      <Column Name="ESTADO" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
-      <Column Name="DESC_CIUDAD" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="NOMBREAUXILIAR" Type="System.String" DbType="VarChar(92)" CanBeNull="true" />
     </Type>
   </Table>
   <Function Name="dbo.spActualizarEntregaMaquina" Method="spActualizarEntregaMaquina">
