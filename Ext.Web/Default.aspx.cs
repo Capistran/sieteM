@@ -82,6 +82,7 @@ namespace Ext.Web
                 lblChofer.Text = "NO ASIGNADO";
                 lblTransporte.Text = "NO ASIGNADO";
                 lblAuxiliar.Text = "NO ASIGNADO";
+
             }
             //lblMes.Text = rutas.Mes.ToUpper();
         }
